@@ -1,0 +1,48 @@
+[0.008s] Invoking command in '/home/devam/bumperbot_ws/build/bumperbot_cpp_examples': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devam/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake /home/devam/bumperbot_ws/src/bumperbot_cpp_examples -DCMAKE_INSTALL_PREFIX=/home/devam/bumperbot_ws/install/bumperbot_cpp_examples
+[0.018s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.086s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.090s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.104s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.105s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.108s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.112s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.118s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.133s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.134s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.187s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.211s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.246s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.246s] -- Configured cppcheck include dirs: 
+[0.246s] -- Configured cppcheck exclude dirs and/or files: 
+[0.246s] -- Added test 'lint_cmake' to check CMake code style
+[0.246s] -- Added test 'uncrustify' to check C / C++ code style
+[0.247s] -- Configured uncrustify additional arguments: 
+[0.247s] -- Added test 'xmllint' to check XML markup files
+[0.247s] -- Configuring done
+[0.251s] -- Generating done
+[0.252s] -- Build files have been written to: /home/devam/bumperbot_ws/build/bumperbot_cpp_examples
+[0.257s] Invoked command in '/home/devam/bumperbot_ws/build/bumperbot_cpp_examples' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devam/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake /home/devam/bumperbot_ws/src/bumperbot_cpp_examples -DCMAKE_INSTALL_PREFIX=/home/devam/bumperbot_ws/install/bumperbot_cpp_examples
+[0.258s] Invoking command in '/home/devam/bumperbot_ws/build/bumperbot_cpp_examples': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devam/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/devam/bumperbot_ws/build/bumperbot_cpp_examples -- -j24 -l24
+[0.286s] [35m[1mConsolidate compiler generated dependencies of target simple_publisher_cpp[0m
+[0.298s] [100%] Built target simple_publisher_cpp
+[0.306s] Invoked command in '/home/devam/bumperbot_ws/build/bumperbot_cpp_examples' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devam/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/devam/bumperbot_ws/build/bumperbot_cpp_examples -- -j24 -l24
+[0.312s] Invoking command in '/home/devam/bumperbot_ws/build/bumperbot_cpp_examples': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devam/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --install /home/devam/bumperbot_ws/build/bumperbot_cpp_examples
+[0.317s] -- Install configuration: ""
+[0.317s] -- Execute custom install script
+[0.317s] -- Up-to-date symlink: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/lib/bumperbot_cpp_examples/simple_publisher_cpp
+[0.317s] -- Up-to-date symlink: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/share/ament_index/resource_index/package_run_dependencies/bumperbot_cpp_examples
+[0.317s] -- Up-to-date symlink: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/share/ament_index/resource_index/parent_prefix_path/bumperbot_cpp_examples
+[0.317s] -- Up-to-date symlink: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/environment/ament_prefix_path.sh
+[0.317s] -- Up-to-date symlink: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/environment/ament_prefix_path.dsv
+[0.317s] -- Up-to-date symlink: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/environment/path.sh
+[0.317s] -- Up-to-date symlink: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/environment/path.dsv
+[0.317s] -- Up-to-date symlink: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/local_setup.bash
+[0.317s] -- Up-to-date symlink: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/local_setup.sh
+[0.317s] -- Up-to-date symlink: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/local_setup.zsh
+[0.317s] -- Up-to-date symlink: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/local_setup.dsv
+[0.317s] -- Symlinking: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/package.dsv
+[0.323s] -- Up-to-date symlink: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/share/ament_index/resource_index/packages/bumperbot_cpp_examples
+[0.323s] -- Up-to-date symlink: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/cmake/bumperbot_cpp_examplesConfig.cmake
+[0.323s] -- Up-to-date symlink: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/cmake/bumperbot_cpp_examplesConfig-version.cmake
+[0.323s] -- Up-to-date symlink: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/package.xml
+[0.324s] Invoked command in '/home/devam/bumperbot_ws/build/bumperbot_cpp_examples' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devam/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --install /home/devam/bumperbot_ws/build/bumperbot_cpp_examples

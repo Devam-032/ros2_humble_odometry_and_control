@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/devam/bumperbot_ws/build/bumperbot_cpp_examples/simple_publisher_cpp" "/home/devam/bumperbot_ws/build/bumperbot_cpp_examples/simple_subscriber_cpp" "TARGETS" "simple_publisher_cpp" "simple_subscriber_cpp" "DESTINATION" "lib/bumperbot_cpp_examples")

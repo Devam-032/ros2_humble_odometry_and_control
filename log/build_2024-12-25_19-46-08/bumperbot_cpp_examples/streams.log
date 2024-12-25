@@ -1,0 +1,26 @@
+[0.007s] Invoking command in '/home/devam/bumperbot_ws/build/bumperbot_cpp_examples': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devam/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/devam/bumperbot_ws/build/bumperbot_cpp_examples -- -j24 -l24
+[0.036s] [35m[1mConsolidate compiler generated dependencies of target simple_subscriber_cpp[0m
+[0.045s] [ 50%] Built target simple_publisher_cpp
+[0.047s] [ 75%] [32mBuilding CXX object CMakeFiles/simple_subscriber_cpp.dir/src/simple_subscriber.cpp.o[0m
+[0.139s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_subscriber.cpp:13:56:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+[0.139s]    13 |             create_subscription<std_msgs::msg::String>([01;35m[K'chatter'[m[K,10,std::bind(&SimpleSubscriber::msgCallback,this,_1));
+[0.139s]       |                                                        [01;35m[K^~~~~~~~~[m[K
+[1.166s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_subscriber.cpp:[m[K In constructor ‘[01m[KSimpleSubscriber::SimpleSubscriber()[m[K’:
+[1.167s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_subscriber.cpp:13:55:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KSimpleSubscriber::create_subscription<std_msgs::msg::String>(int, int, std::_Bind_helper<false, void (SimpleSubscriber::*)(const std_msgs::msg::String_<std::allocator<void> >&) const, SimpleSubscriber*, const std::_Placeholder<1>&>::type)[m[K’
+[1.167s]    13 |             [01;31m[Kcreate_subscription<std_msgs::msg::String>('chatter',10,std::bind(&SimpleSubscriber::msgCallback,this,_1))[m[K;
+[1.167s]       |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.167s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[1.167s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[1.167s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.167s]                  from [01m[K/home/devam/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_subscriber.cpp:1[m[K:
+[1.167s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+[1.167s]   219 |   [01;36m[Kcreate_subscription[m[K(
+[1.167s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[1.167s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.167s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_subscriber.cpp:13:56:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[K1953785202[m[K’ (type ‘[01m[Kint[m[K’) to type ‘[01m[Kconst string&[m[K’ {aka ‘[01m[Kconst std::__cxx11::basic_string<char>&[m[K’}
+[1.167s]    13 |             create_subscription<std_msgs::msg::String>([01;36m[K'chatter'[m[K,10,std::bind(&SimpleSubscriber::msgCallback,this,_1));
+[1.167s]       |                                                        [01;36m[K^~~~~~~~~[m[K
+[1.383s] gmake[2]: *** [CMakeFiles/simple_subscriber_cpp.dir/build.make:76: CMakeFiles/simple_subscriber_cpp.dir/src/simple_subscriber.cpp.o] Error 1
+[1.383s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/simple_subscriber_cpp.dir/all] Error 2
+[1.383s] gmake: *** [Makefile:146: all] Error 2
+[1.386s] Invoked command in '/home/devam/bumperbot_ws/build/bumperbot_cpp_examples' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devam/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/devam/bumperbot_ws/build/bumperbot_cpp_examples -- -j24 -l24

@@ -1,0 +1,28 @@
+[0.009s] Invoking command in '/home/devam/bumperbot_ws/build/bumperbot_cpp_examples': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devam/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/devam/bumperbot_ws/build/bumperbot_cpp_examples -- -j24 -l24
+[0.035s] [35m[1mConsolidate compiler generated dependencies of target simple_subscriber_cpp[0m
+[0.044s] [ 50%] Built target simple_publisher_cpp
+[0.045s] [ 75%] [32mBuilding CXX object CMakeFiles/simple_subscriber_cpp.dir/src/simple_subscriber.cpp.o[0m
+[3.793s] [100%] [32m[1mLinking CXX executable simple_subscriber_cpp[0m
+[3.979s] [100%] Built target simple_subscriber_cpp
+[3.988s] Invoked command in '/home/devam/bumperbot_ws/build/bumperbot_cpp_examples' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devam/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/devam/bumperbot_ws/build/bumperbot_cpp_examples -- -j24 -l24
+[3.999s] Invoking command in '/home/devam/bumperbot_ws/build/bumperbot_cpp_examples': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devam/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --install /home/devam/bumperbot_ws/build/bumperbot_cpp_examples
+[4.008s] -- Install configuration: ""
+[4.008s] -- Execute custom install script
+[4.008s] -- Up-to-date symlink: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/lib/bumperbot_cpp_examples/simple_publisher_cpp
+[4.009s] -- Up-to-date symlink: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/lib/bumperbot_cpp_examples/simple_subscriber_cpp
+[4.009s] -- Up-to-date symlink: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/share/ament_index/resource_index/package_run_dependencies/bumperbot_cpp_examples
+[4.009s] -- Up-to-date symlink: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/share/ament_index/resource_index/parent_prefix_path/bumperbot_cpp_examples
+[4.009s] -- Up-to-date symlink: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/environment/ament_prefix_path.sh
+[4.009s] -- Up-to-date symlink: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/environment/ament_prefix_path.dsv
+[4.009s] -- Up-to-date symlink: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/environment/path.sh
+[4.009s] -- Up-to-date symlink: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/environment/path.dsv
+[4.009s] -- Up-to-date symlink: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/local_setup.bash
+[4.009s] -- Up-to-date symlink: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/local_setup.sh
+[4.010s] -- Up-to-date symlink: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/local_setup.zsh
+[4.010s] -- Up-to-date symlink: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/local_setup.dsv
+[4.010s] -- Symlinking: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/package.dsv
+[4.015s] -- Up-to-date symlink: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/share/ament_index/resource_index/packages/bumperbot_cpp_examples
+[4.015s] -- Up-to-date symlink: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/cmake/bumperbot_cpp_examplesConfig.cmake
+[4.015s] -- Up-to-date symlink: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/cmake/bumperbot_cpp_examplesConfig-version.cmake
+[4.015s] -- Up-to-date symlink: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/package.xml
+[4.017s] Invoked command in '/home/devam/bumperbot_ws/build/bumperbot_cpp_examples' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devam/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --install /home/devam/bumperbot_ws/build/bumperbot_cpp_examples

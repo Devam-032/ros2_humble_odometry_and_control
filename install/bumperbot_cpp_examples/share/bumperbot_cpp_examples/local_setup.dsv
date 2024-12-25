@@ -1,2 +1,1 @@
-source;share/bumperbot_cpp_examples/environment/ament_prefix_path.sh
-source;share/bumperbot_cpp_examples/environment/path.sh
+/home/devam/bumperbot_ws/build/bumperbot_cpp_examples/ament_cmake_environment_hooks/local_setup.dsv
