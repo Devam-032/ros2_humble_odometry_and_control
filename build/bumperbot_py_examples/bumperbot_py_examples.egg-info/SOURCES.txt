@@ -11,6 +11,7 @@ setup.py
 bumperbot_py_examples/__init__.py
 bumperbot_py_examples/simple_publisher.py
 bumperbot_py_examples/simple_subscriber.py
+bumperbot_py_examples/twist_subscriber.py
 bumperbot_py_examples.egg-info/PKG-INFO
 bumperbot_py_examples.egg-info/SOURCES.txt
 bumperbot_py_examples.egg-info/dependency_links.txt
