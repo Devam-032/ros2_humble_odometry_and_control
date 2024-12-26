@@ -310,7 +310,7 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install("TARGETS" "simple_publisher_cpp" "simple_subscriber_cpp" "DESTINATION" "lib/bumperbot_cpp_examples")
+# install("TARGETS" "simple_publisher_cpp" "simple_subscriber_cpp" "twist_publisher_cpp" "DESTINATION" "lib/bumperbot_cpp_examples")
 include("/home/devam/bumperbot_ws/build/bumperbot_cpp_examples/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(FILES "/home/devam/bumperbot_ws/build/bumperbot_cpp_examples/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/bumperbot_cpp_examples" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")

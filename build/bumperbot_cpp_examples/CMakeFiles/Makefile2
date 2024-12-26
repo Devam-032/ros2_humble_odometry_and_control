@@ -64,6 +64,7 @@ CMAKE_BINARY_DIR = /home/devam/bumperbot_ws/build/bumperbot_cpp_examples
 
 # The main recursive "all" target.
 all: CMakeFiles/simple_publisher_cpp.dir/all
+all: CMakeFiles/twist_publisher_cpp.dir/all
 all: CMakeFiles/simple_subscriber_cpp.dir/all
 .PHONY : all
 
@@ -75,6 +76,7 @@ preinstall:
 clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/bumperbot_cpp_examples_uninstall.dir/clean
 clean: CMakeFiles/simple_publisher_cpp.dir/clean
+clean: CMakeFiles/twist_publisher_cpp.dir/clean
 clean: CMakeFiles/simple_subscriber_cpp.dir/clean
 .PHONY : clean
 
@@ -155,6 +157,32 @@ simple_publisher_cpp: CMakeFiles/simple_publisher_cpp.dir/rule
 CMakeFiles/simple_publisher_cpp.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_publisher_cpp.dir/build.make CMakeFiles/simple_publisher_cpp.dir/clean
 .PHONY : CMakeFiles/simple_publisher_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/twist_publisher_cpp.dir
+
+# All Build rule for target.
+CMakeFiles/twist_publisher_cpp.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/twist_publisher_cpp.dir/build.make CMakeFiles/twist_publisher_cpp.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/twist_publisher_cpp.dir/build.make CMakeFiles/twist_publisher_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/devam/bumperbot_ws/build/bumperbot_cpp_examples/CMakeFiles --progress-num=5,6 "Built target twist_publisher_cpp"
+.PHONY : CMakeFiles/twist_publisher_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/twist_publisher_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/devam/bumperbot_ws/build/bumperbot_cpp_examples/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/twist_publisher_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/devam/bumperbot_ws/build/bumperbot_cpp_examples/CMakeFiles 0
+.PHONY : CMakeFiles/twist_publisher_cpp.dir/rule
+
+# Convenience name for target.
+twist_publisher_cpp: CMakeFiles/twist_publisher_cpp.dir/rule
+.PHONY : twist_publisher_cpp
+
+# clean rule for target.
+CMakeFiles/twist_publisher_cpp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/twist_publisher_cpp.dir/build.make CMakeFiles/twist_publisher_cpp.dir/clean
+.PHONY : CMakeFiles/twist_publisher_cpp.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/simple_subscriber_cpp.dir

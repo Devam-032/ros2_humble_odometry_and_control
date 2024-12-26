@@ -1,0 +1,18 @@
+[0.585s] Invoking command in '/home/devam/bumperbot_ws/build/bumperbot_py_examples': PYTHONPATH=/home/devam/bumperbot_ws/build/bumperbot_py_examples/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/devam/bumperbot_ws/install/bumperbot_py_examples/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/devam/bumperbot_ws/build/bumperbot_py_examples/build --no-deps symlink_data
+[0.825s] running develop
+[0.969s] running egg_info
+[0.977s] writing bumperbot_py_examples.egg-info/PKG-INFO
+[0.977s] writing dependency_links to bumperbot_py_examples.egg-info/dependency_links.txt
+[0.977s] writing entry points to bumperbot_py_examples.egg-info/entry_points.txt
+[0.978s] writing requirements to bumperbot_py_examples.egg-info/requires.txt
+[0.978s] writing top-level names to bumperbot_py_examples.egg-info/top_level.txt
+[0.995s] reading manifest file 'bumperbot_py_examples.egg-info/SOURCES.txt'
+[0.995s] writing manifest file 'bumperbot_py_examples.egg-info/SOURCES.txt'
+[1.004s] running build_ext
+[1.004s] Creating /home/devam/bumperbot_ws/install/bumperbot_py_examples/lib/python3.10/site-packages/bumperbot-py-examples.egg-link (link to .)
+[1.005s] Installing simple_publisher script to /home/devam/bumperbot_ws/install/bumperbot_py_examples/lib/bumperbot_py_examples
+[1.005s] Installing simple_subscriber script to /home/devam/bumperbot_ws/install/bumperbot_py_examples/lib/bumperbot_py_examples
+[1.005s] 
+[1.005s] Installed /home/devam/bumperbot_ws/build/bumperbot_py_examples
+[1.005s] running symlink_data
+[1.033s] Invoked command in '/home/devam/bumperbot_ws/build/bumperbot_py_examples' returned '0': PYTHONPATH=/home/devam/bumperbot_ws/build/bumperbot_py_examples/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/devam/bumperbot_ws/install/bumperbot_py_examples/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/devam/bumperbot_ws/build/bumperbot_py_examples/build --no-deps symlink_data

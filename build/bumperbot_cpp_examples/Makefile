@@ -211,6 +211,19 @@ simple_publisher_cpp/fast:
 .PHONY : simple_publisher_cpp/fast
 
 #=============================================================================
+# Target rules for targets named twist_publisher_cpp
+
+# Build rule for target.
+twist_publisher_cpp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 twist_publisher_cpp
+.PHONY : twist_publisher_cpp
+
+# fast build rule for target.
+twist_publisher_cpp/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/twist_publisher_cpp.dir/build.make CMakeFiles/twist_publisher_cpp.dir/build
+.PHONY : twist_publisher_cpp/fast
+
+#=============================================================================
 # Target rules for targets named simple_subscriber_cpp
 
 # Build rule for target.
@@ -271,6 +284,30 @@ src/simple_subscriber.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_subscriber_cpp.dir/build.make CMakeFiles/simple_subscriber_cpp.dir/src/simple_subscriber.cpp.s
 .PHONY : src/simple_subscriber.cpp.s
 
+src/twist_publisher.o: src/twist_publisher.cpp.o
+.PHONY : src/twist_publisher.o
+
+# target to build an object file
+src/twist_publisher.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/twist_publisher_cpp.dir/build.make CMakeFiles/twist_publisher_cpp.dir/src/twist_publisher.cpp.o
+.PHONY : src/twist_publisher.cpp.o
+
+src/twist_publisher.i: src/twist_publisher.cpp.i
+.PHONY : src/twist_publisher.i
+
+# target to preprocess a source file
+src/twist_publisher.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/twist_publisher_cpp.dir/build.make CMakeFiles/twist_publisher_cpp.dir/src/twist_publisher.cpp.i
+.PHONY : src/twist_publisher.cpp.i
+
+src/twist_publisher.s: src/twist_publisher.cpp.s
+.PHONY : src/twist_publisher.s
+
+# target to generate assembly for a file
+src/twist_publisher.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/twist_publisher_cpp.dir/build.make CMakeFiles/twist_publisher_cpp.dir/src/twist_publisher.cpp.s
+.PHONY : src/twist_publisher.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -288,12 +325,16 @@ help:
 	@echo "... uninstall"
 	@echo "... simple_publisher_cpp"
 	@echo "... simple_subscriber_cpp"
+	@echo "... twist_publisher_cpp"
 	@echo "... src/simple_publisher.o"
 	@echo "... src/simple_publisher.i"
 	@echo "... src/simple_publisher.s"
 	@echo "... src/simple_subscriber.o"
 	@echo "... src/simple_subscriber.i"
 	@echo "... src/simple_subscriber.s"
+	@echo "... src/twist_publisher.o"
+	@echo "... src/twist_publisher.i"
+	@echo "... src/twist_publisher.s"
 .PHONY : help
 
 

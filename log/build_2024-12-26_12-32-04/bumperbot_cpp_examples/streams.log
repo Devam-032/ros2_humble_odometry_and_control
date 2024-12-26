@@ -1,0 +1,64 @@
+[0.008s] Invoking command in '/home/devam/bumperbot_ws/build/bumperbot_cpp_examples': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devam/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/devam/bumperbot_ws/build/bumperbot_cpp_examples -- -j24 -l24
+[0.045s] [ 16%] [32mBuilding CXX object CMakeFiles/twist_publisher_cpp.dir/src/twist_publisher.cpp.o[0m
+[0.046s] [ 50%] Built target simple_publisher_cpp
+[0.048s] [ 83%] Built target simple_subscriber_cpp
+[0.145s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_cpp_examples/src/twist_publisher.cpp:13:63:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+[0.145s]    13 |             pub = create_publisher<geometry_msgs::msg::Twist>([01;35m[K'cmd_vel'[m[K,10);
+[0.145s]       |                                                               [01;35m[K^~~~~~~~~[m[K
+[1.335s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_cpp_examples/src/twist_publisher.cpp:24:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ka[m[K’ does not name a type
+[1.335s]    24 |         [01;31m[Ka[m[K=1.0;
+[1.335s]       |         [01;31m[K^[m[K
+[1.336s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_cpp_examples/src/twist_publisher.cpp:25:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kb[m[K’ does not name a type
+[1.336s]    25 |         [01;31m[Kb[m[K=2.0;
+[1.336s]       |         [01;31m[K^[m[K
+[1.336s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_cpp_examples/src/twist_publisher.cpp:26:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kc[m[K’ does not name a type
+[1.336s]    26 |         [01;31m[Kc[m[K=3.0;
+[1.336s]       |         [01;31m[K^[m[K
+[1.336s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_cpp_examples/src/twist_publisher.cpp:[m[K In constructor ‘[01m[KTwistPublisher::TwistPublisher()[m[K’:
+[1.336s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_cpp_examples/src/twist_publisher.cpp:11:53:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K([m[K’ before ‘[01m[K,[m[K’ token
+[1.336s]    11 |         TwistPublisher() : Node("twist_publisher"),a[01;31m[K,[m[Kb,c
+[1.336s]       |                                                     [01;31m[K^[m[K
+[1.336s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_cpp_examples/src/twist_publisher.cpp:11:55:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K([m[K’ before ‘[01m[K,[m[K’ token
+[1.337s]    11 |         TwistPublisher() : Node("twist_publisher"),a,b[01;31m[K,[m[Kc
+[1.337s]       |                                                       [01;31m[K^[m[K
+[1.339s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_cpp_examples/src/twist_publisher.cpp:13:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub[m[K’ was not declared in this scope
+[1.339s]    13 |             [01;31m[Kpub[m[K = create_publisher<geometry_msgs::msg::Twist>('cmd_vel',10);
+[1.339s]       |             [01;31m[K^~~[m[K
+[1.339s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_cpp_examples/src/twist_publisher.cpp:13:62:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KTwistPublisher::create_publisher<geometry_msgs::msg::Twist>(int, int)[m[K’
+[1.339s]    13 |             pub = [01;31m[Kcreate_publisher<geometry_msgs::msg::Twist>('cmd_vel',10)[m[K;
+[1.339s]       |                   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[1.339s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[1.340s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[1.340s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.340s]                  from [01m[K/home/devam/bumperbot_ws/src/bumperbot_cpp_examples/src/twist_publisher.cpp:1[m[K:
+[1.340s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+[1.340s]   195 |   [01;36m[Kcreate_publisher[m[K(
+[1.340s]       |   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[1.340s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.340s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_cpp_examples/src/twist_publisher.cpp:13:63:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[K1601594732[m[K’ (type ‘[01m[Kint[m[K’) to type ‘[01m[Kconst string&[m[K’ {aka ‘[01m[Kconst std::__cxx11::basic_string<char>&[m[K’}
+[1.340s]    13 |             pub = create_publisher<geometry_msgs::msg::Twist>([01;36m[K'cmd_vel'[m[K,10);
+[1.340s]       |                                                               [01;36m[K^~~~~~~~~[m[K
+[1.340s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_cpp_examples/src/twist_publisher.cpp:13:76:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ before ‘[01m[K;[m[K’ token
+[1.340s]    13 |             pub = create_publisher<geometry_msgs::msg::Twist>('cmd_vel',10)[01;31m[K;[m[K
+[1.340s]       |                                                                            [01;31m[K^[m[K
+[1.340s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_cpp_examples/src/twist_publisher.cpp:12:9:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[1.340s]    12 |         [01;36m[K{[m[K
+[1.341s]       |         [01;36m[K^[m[K
+[1.341s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_cpp_examples/src/twist_publisher.cpp:11:56:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kunsigned int[m[K’ in initialization
+[1.341s]    11 |         TwistPublisher() : Node("twist_publisher"),a,b,[01;31m[Kc[m[K
+[1.341s]       |                                                        [01;31m[K^[m[K
+[1.341s]    12 | [01;31m[K        {[m[K
+[1.341s]       |         [01;31m[K~[m[K                                               
+[1.341s]    13 | [01;31m[K            pub = create_publisher<geometry_msgs::msg::Twist>('cmd_vel',10)[m[K;
+[1.341s]       |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.341s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_cpp_examples/src/twist_publisher.cpp:13:76:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K;[m[K’ token
+[1.341s]    13 |             pub = create_publisher<geometry_msgs::msg::Twist>('cmd_vel',10)[01;31m[K;[m[K
+[1.341s]       |                                                                            [01;31m[K^[m[K
+[1.342s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_cpp_examples/src/twist_publisher.cpp:[m[K In member function ‘[01m[Kvoid TwistPublisher::timerCallback()[m[K’:
+[1.342s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_cpp_examples/src/twist_publisher.cpp:34:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub[m[K’ was not declared in this scope
+[1.342s]    34 |             [01;31m[Kpub[m[K->publish(message);
+[1.342s]       |             [01;31m[K^~~[m[K
+[1.618s] gmake[2]: *** [CMakeFiles/twist_publisher_cpp.dir/build.make:76: CMakeFiles/twist_publisher_cpp.dir/src/twist_publisher.cpp.o] Error 1
+[1.618s] gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/twist_publisher_cpp.dir/all] Error 2
+[1.618s] gmake: *** [Makefile:146: all] Error 2
+[1.620s] Invoked command in '/home/devam/bumperbot_ws/build/bumperbot_cpp_examples' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devam/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/devam/bumperbot_ws/build/bumperbot_cpp_examples -- -j24 -l24

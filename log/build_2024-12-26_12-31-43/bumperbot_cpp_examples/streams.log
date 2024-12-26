@@ -1,0 +1,37 @@
+[0.010s] Invoking command in '/home/devam/bumperbot_ws/build/bumperbot_cpp_examples': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devam/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/devam/bumperbot_ws/build/bumperbot_cpp_examples -- -j24 -l24
+[0.048s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.126s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.135s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.156s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.158s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.162s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.169s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.177s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.202s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.203s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.279s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.315s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.325s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.371s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.371s] -- Configured cppcheck include dirs: 
+[0.371s] -- Configured cppcheck exclude dirs and/or files: 
+[0.371s] -- Added test 'lint_cmake' to check CMake code style
+[0.372s] -- Added test 'uncrustify' to check C / C++ code style
+[0.372s] -- Configured uncrustify additional arguments: 
+[0.372s] -- Added test 'xmllint' to check XML markup files
+[0.372s] -- Configuring done
+[0.383s] -- Generating done
+[0.386s] -- Build files have been written to: /home/devam/bumperbot_ws/build/bumperbot_cpp_examples
+[0.406s] [35m[1mConsolidate compiler generated dependencies of target simple_publisher_cpp[0m
+[0.406s] [35m[1mConsolidate compiler generated dependencies of target simple_subscriber_cpp[0m
+[0.415s] [ 16%] [32mBuilding CXX object CMakeFiles/twist_publisher_cpp.dir/src/twist_publisher.cpp.o[0m
+[0.418s] [ 50%] Built target simple_subscriber_cpp
+[0.419s] [ 83%] Built target simple_publisher_cpp
+[0.540s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_cpp_examples/src/twist_publisher.cpp:4:10:[m[K [01;31m[Kfatal error: [m[Kchrono.hpp: No such file or directory
+[0.540s]     4 | #include [01;31m[K<chrono.hpp>[m[K
+[0.540s]       |          [01;31m[K^~~~~~~~~~~~[m[K
+[0.540s] compilation terminated.
+[0.541s] gmake[2]: *** [CMakeFiles/twist_publisher_cpp.dir/build.make:76: CMakeFiles/twist_publisher_cpp.dir/src/twist_publisher.cpp.o] Error 1
+[0.541s] gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/twist_publisher_cpp.dir/all] Error 2
+[0.542s] gmake: *** [Makefile:146: all] Error 2
+[0.544s] Invoked command in '/home/devam/bumperbot_ws/build/bumperbot_cpp_examples' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devam/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/devam/bumperbot_ws/build/bumperbot_cpp_examples -- -j24 -l24
