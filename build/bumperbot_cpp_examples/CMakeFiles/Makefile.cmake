@@ -682,4 +682,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/simple_publisher_cpp.dir/DependInfo.cmake"
   "CMakeFiles/twist_publisher_cpp.dir/DependInfo.cmake"
   "CMakeFiles/simple_subscriber_cpp.dir/DependInfo.cmake"
+  "CMakeFiles/twist_pubsub_cpp.dir/DependInfo.cmake"
   )

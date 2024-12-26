@@ -17,11 +17,15 @@ add_executable(twist_publisher_cpp src/twist_publisher.cpp)
 ament_target_dependencies(twist_publisher_cpp rclcpp geometry_msgs)
 add_executable(simple_subscriber_cpp src/simple_subscriber.cpp)
 ament_target_dependencies(simple_subscriber_cpp rclcpp std_msgs)
+add_executable(twist_pubsub_cpp src/twist_pub_sub.cpp)
+ament_target_dependencies(twist_pubsub_cpp rclcpp geometry_msgs)
+
 
 install(TARGETS
   simple_publisher_cpp
   simple_subscriber_cpp
   twist_publisher_cpp
+  twist_pubsub_cpp
   DESTINATION lib/${PROJECT_NAME}
 )
 

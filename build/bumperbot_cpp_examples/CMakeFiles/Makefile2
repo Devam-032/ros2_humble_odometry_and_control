@@ -66,6 +66,7 @@ CMAKE_BINARY_DIR = /home/devam/bumperbot_ws/build/bumperbot_cpp_examples
 all: CMakeFiles/simple_publisher_cpp.dir/all
 all: CMakeFiles/twist_publisher_cpp.dir/all
 all: CMakeFiles/simple_subscriber_cpp.dir/all
+all: CMakeFiles/twist_pubsub_cpp.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -78,6 +79,7 @@ clean: CMakeFiles/bumperbot_cpp_examples_uninstall.dir/clean
 clean: CMakeFiles/simple_publisher_cpp.dir/clean
 clean: CMakeFiles/twist_publisher_cpp.dir/clean
 clean: CMakeFiles/simple_subscriber_cpp.dir/clean
+clean: CMakeFiles/twist_pubsub_cpp.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -209,6 +211,32 @@ simple_subscriber_cpp: CMakeFiles/simple_subscriber_cpp.dir/rule
 CMakeFiles/simple_subscriber_cpp.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_subscriber_cpp.dir/build.make CMakeFiles/simple_subscriber_cpp.dir/clean
 .PHONY : CMakeFiles/simple_subscriber_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/twist_pubsub_cpp.dir
+
+# All Build rule for target.
+CMakeFiles/twist_pubsub_cpp.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/twist_pubsub_cpp.dir/build.make CMakeFiles/twist_pubsub_cpp.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/twist_pubsub_cpp.dir/build.make CMakeFiles/twist_pubsub_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/devam/bumperbot_ws/build/bumperbot_cpp_examples/CMakeFiles --progress-num=7,8 "Built target twist_pubsub_cpp"
+.PHONY : CMakeFiles/twist_pubsub_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/twist_pubsub_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/devam/bumperbot_ws/build/bumperbot_cpp_examples/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/twist_pubsub_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/devam/bumperbot_ws/build/bumperbot_cpp_examples/CMakeFiles 0
+.PHONY : CMakeFiles/twist_pubsub_cpp.dir/rule
+
+# Convenience name for target.
+twist_pubsub_cpp: CMakeFiles/twist_pubsub_cpp.dir/rule
+.PHONY : twist_pubsub_cpp
+
+# clean rule for target.
+CMakeFiles/twist_pubsub_cpp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/twist_pubsub_cpp.dir/build.make CMakeFiles/twist_pubsub_cpp.dir/clean
+.PHONY : CMakeFiles/twist_pubsub_cpp.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

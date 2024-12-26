@@ -236,6 +236,19 @@ simple_subscriber_cpp/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_subscriber_cpp.dir/build.make CMakeFiles/simple_subscriber_cpp.dir/build
 .PHONY : simple_subscriber_cpp/fast
 
+#=============================================================================
+# Target rules for targets named twist_pubsub_cpp
+
+# Build rule for target.
+twist_pubsub_cpp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 twist_pubsub_cpp
+.PHONY : twist_pubsub_cpp
+
+# fast build rule for target.
+twist_pubsub_cpp/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/twist_pubsub_cpp.dir/build.make CMakeFiles/twist_pubsub_cpp.dir/build
+.PHONY : twist_pubsub_cpp/fast
+
 src/simple_publisher.o: src/simple_publisher.cpp.o
 .PHONY : src/simple_publisher.o
 
@@ -284,6 +297,30 @@ src/simple_subscriber.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_subscriber_cpp.dir/build.make CMakeFiles/simple_subscriber_cpp.dir/src/simple_subscriber.cpp.s
 .PHONY : src/simple_subscriber.cpp.s
 
+src/twist_pub_sub.o: src/twist_pub_sub.cpp.o
+.PHONY : src/twist_pub_sub.o
+
+# target to build an object file
+src/twist_pub_sub.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/twist_pubsub_cpp.dir/build.make CMakeFiles/twist_pubsub_cpp.dir/src/twist_pub_sub.cpp.o
+.PHONY : src/twist_pub_sub.cpp.o
+
+src/twist_pub_sub.i: src/twist_pub_sub.cpp.i
+.PHONY : src/twist_pub_sub.i
+
+# target to preprocess a source file
+src/twist_pub_sub.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/twist_pubsub_cpp.dir/build.make CMakeFiles/twist_pubsub_cpp.dir/src/twist_pub_sub.cpp.i
+.PHONY : src/twist_pub_sub.cpp.i
+
+src/twist_pub_sub.s: src/twist_pub_sub.cpp.s
+.PHONY : src/twist_pub_sub.s
+
+# target to generate assembly for a file
+src/twist_pub_sub.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/twist_pubsub_cpp.dir/build.make CMakeFiles/twist_pubsub_cpp.dir/src/twist_pub_sub.cpp.s
+.PHONY : src/twist_pub_sub.cpp.s
+
 src/twist_publisher.o: src/twist_publisher.cpp.o
 .PHONY : src/twist_publisher.o
 
@@ -326,12 +363,16 @@ help:
 	@echo "... simple_publisher_cpp"
 	@echo "... simple_subscriber_cpp"
 	@echo "... twist_publisher_cpp"
+	@echo "... twist_pubsub_cpp"
 	@echo "... src/simple_publisher.o"
 	@echo "... src/simple_publisher.i"
 	@echo "... src/simple_publisher.s"
 	@echo "... src/simple_subscriber.o"
 	@echo "... src/simple_subscriber.i"
 	@echo "... src/simple_subscriber.s"
+	@echo "... src/twist_pub_sub.o"
+	@echo "... src/twist_pub_sub.i"
+	@echo "... src/twist_pub_sub.s"
 	@echo "... src/twist_publisher.o"
 	@echo "... src/twist_publisher.i"
 	@echo "... src/twist_publisher.s"
