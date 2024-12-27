@@ -1,0 +1,21 @@
+[0.576s] Invoking command in '/home/devam/bumperbot_ws/build/bumperbot_py_examples': PYTHONPATH=/home/devam/bumperbot_ws/build/bumperbot_py_examples/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/devam/bumperbot_ws/install/bumperbot_py_examples/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/devam/bumperbot_ws/build/bumperbot_py_examples/build --no-deps symlink_data --force
+[0.772s] running develop
+[0.895s] running egg_info
+[0.902s] writing bumperbot_py_examples.egg-info/PKG-INFO
+[0.902s] writing dependency_links to bumperbot_py_examples.egg-info/dependency_links.txt
+[0.902s] writing entry points to bumperbot_py_examples.egg-info/entry_points.txt
+[0.902s] writing requirements to bumperbot_py_examples.egg-info/requires.txt
+[0.902s] writing top-level names to bumperbot_py_examples.egg-info/top_level.txt
+[0.917s] reading manifest file 'bumperbot_py_examples.egg-info/SOURCES.txt'
+[0.917s] writing manifest file 'bumperbot_py_examples.egg-info/SOURCES.txt'
+[0.925s] running build_ext
+[0.925s] Creating /home/devam/bumperbot_ws/install/bumperbot_py_examples/lib/python3.10/site-packages/bumperbot-py-examples.egg-link (link to .)
+[0.925s] Installing simple_publisher script to /home/devam/bumperbot_ws/install/bumperbot_py_examples/lib/bumperbot_py_examples
+[0.925s] Installing simple_subscriber script to /home/devam/bumperbot_ws/install/bumperbot_py_examples/lib/bumperbot_py_examples
+[0.926s] Installing twist_subscriber script to /home/devam/bumperbot_ws/install/bumperbot_py_examples/lib/bumperbot_py_examples
+[0.926s] 
+[0.926s] Installed /home/devam/bumperbot_ws/build/bumperbot_py_examples
+[0.926s] running symlink_data
+[0.926s] symbolically linking /home/devam/bumperbot_ws/build/bumperbot_py_examples/resource/bumperbot_py_examples -> /home/devam/bumperbot_ws/install/bumperbot_py_examples/share/ament_index/resource_index/packages
+[0.926s] symbolically linking /home/devam/bumperbot_ws/build/bumperbot_py_examples/package.xml -> /home/devam/bumperbot_ws/install/bumperbot_py_examples/share/bumperbot_py_examples
+[0.948s] Invoked command in '/home/devam/bumperbot_ws/build/bumperbot_py_examples' returned '0': PYTHONPATH=/home/devam/bumperbot_ws/build/bumperbot_py_examples/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/devam/bumperbot_ws/install/bumperbot_py_examples/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/devam/bumperbot_ws/build/bumperbot_py_examples/build --no-deps symlink_data --force

@@ -4,3 +4,6 @@ source;share/bumperbot_py_examples/hook/pythonpath.sh
 source;share/bumperbot_py_examples/hook/ament_prefix_path.ps1
 source;share/bumperbot_py_examples/hook/ament_prefix_path.dsv
 source;share/bumperbot_py_examples/hook/ament_prefix_path.sh
+source;../../build/bumperbot_py_examples/share/bumperbot_py_examples/hook/pythonpath_develop.ps1
+source;../../build/bumperbot_py_examples/share/bumperbot_py_examples/hook/pythonpath_develop.dsv
+source;../../build/bumperbot_py_examples/share/bumperbot_py_examples/hook/pythonpath_develop.sh
