@@ -12,11 +12,7 @@ bumperbot_py_examples/__init__.py
 bumperbot_py_examples/simple_publisher.py
 bumperbot_py_examples/simple_subscriber.py
 bumperbot_py_examples/twist_subscriber.py
-bumperbot_py_examples.egg-info/PKG-INFO
-bumperbot_py_examples.egg-info/SOURCES.txt
-bumperbot_py_examples.egg-info/dependency_links.txt
-bumperbot_py_examples.egg-info/entry_points.txt
-bumperbot_py_examples.egg-info/requires.txt
-bumperbot_py_examples.egg-info/top_level.txt
-bumperbot_py_examples.egg-info/zip-safe
 resource/bumperbot_py_examples
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py
