@@ -229,7 +229,8 @@
 			"destination" : "share/bumperbot_controller",
 			"paths" : 
 			[
-				"config"
+				"config",
+				"launch"
 			],
 			"type" : "directory"
 		},

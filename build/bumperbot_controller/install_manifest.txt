@@ -1,4 +1,5 @@
 /home/devam/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/config/bumperbot_controllers.yaml
+/home/devam/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/launch/controller.launch.py
 /home/devam/bumperbot_ws/install/bumperbot_controller/share/ament_index/resource_index/package_run_dependencies/bumperbot_controller
 /home/devam/bumperbot_ws/install/bumperbot_controller/share/ament_index/resource_index/parent_prefix_path/bumperbot_controller
 /home/devam/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/environment/ament_prefix_path.sh
