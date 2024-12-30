@@ -72,11 +72,11 @@ To further explore and solidify the concepts, additional practice scripts were d
 4. Run the desired script:
    - For C++:
      ```bash
-     ros2 run <package_name> <executable_name>
+     ros2 run bumperbot_cpp_examples <executable_name>
      ```
    - For Python:
      ```bash
-     ros2 run <package_name> <script_name>
+     ros2 run bumperbot_py_examples <script_name>
      ```
 
 ## Future Plans
