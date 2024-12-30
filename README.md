@@ -26,6 +26,11 @@ This repository contains implementations and practice scripts based on key learn
 - Utilized URDF to define joint structures, linkages, and physical properties of the robot.
 - Verified the URDF design in simulation environments for functional testing.
 
+### Differential Drive Controller
+- Implemented the `diff_drive_controller` to enable precise control of the differential drive robot.
+- Configured the controller to interface seamlessly with the robot's hardware and ROS 2 topics.
+- Used the controller to translate velocity commands into wheel-specific control inputs.
+
 ## Practice Enhancements
 To further explore and solidify the concepts, additional practice scripts were developed:
 
