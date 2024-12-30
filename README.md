@@ -31,6 +31,11 @@ This repository contains implementations and practice scripts based on key learn
 - Configured the controller to interface seamlessly with the robot's hardware and ROS 2 topics.
 - Used the controller to translate velocity commands into wheel-specific control inputs.
 
+### Launch Files
+- Developed launch files to streamline the process of launching the differential drive controller for the designed robot.
+- Created a launch file to initialize the robot in Gazebo Ignition, with added functionality to automatically detect the Gazebo version based on the ROS 2 version.
+- Enhanced compatibility and support for various ROS 2 versions through dynamic version checking in the launch files.
+
 ## Practice Enhancements
 To further explore and solidify the concepts, additional practice scripts were developed:
 
@@ -82,6 +87,16 @@ To further explore and solidify the concepts, additional practice scripts were d
    - For Python:
      ```bash
      ros2 run bumperbot_py_examples <script_name>
+     ```
+
+5. Launch the controller or robot in Gazebo:
+   - Launch the differential drive controller:
+     ```bash
+     ros2 launch bumperbot_controller controller.launch.py
+     ```
+   - Launch the robot in Gazebo Ignition:
+     ```bash
+     ros2 launch bumperbot_description gazebo.launch.py
      ```
 
 ## Future Plans
