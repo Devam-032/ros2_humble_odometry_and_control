@@ -22,7 +22,8 @@ setup(
         'console_scripts': [
             'simple_publisher = bumperbot_py_examples.simple_publisher:main',
             'simple_subscriber = bumperbot_py_examples.simple_subscriber:main',
-            'twist_subscriber = bumperbot_py_examples.twist_subscriber:main'
+            'twist_subscriber = bumperbot_py_examples.twist_subscriber:main',
+            'turtlesim_reference_pose_measurement = bumperbot_py_examples.turtlesim_reference_pose_measurement:main'
         ],
     },
 )

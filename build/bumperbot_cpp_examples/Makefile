@@ -249,6 +249,19 @@ twist_pubsub_cpp/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/twist_pubsub_cpp.dir/build.make CMakeFiles/twist_pubsub_cpp.dir/build
 .PHONY : twist_pubsub_cpp/fast
 
+#=============================================================================
+# Target rules for targets named turtle_ref_pose
+
+# Build rule for target.
+turtle_ref_pose: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 turtle_ref_pose
+.PHONY : turtle_ref_pose
+
+# fast build rule for target.
+turtle_ref_pose/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtle_ref_pose.dir/build.make CMakeFiles/turtle_ref_pose.dir/build
+.PHONY : turtle_ref_pose/fast
+
 src/simple_publisher.o: src/simple_publisher.cpp.o
 .PHONY : src/simple_publisher.o
 
@@ -296,6 +309,30 @@ src/simple_subscriber.s: src/simple_subscriber.cpp.s
 src/simple_subscriber.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_subscriber_cpp.dir/build.make CMakeFiles/simple_subscriber_cpp.dir/src/simple_subscriber.cpp.s
 .PHONY : src/simple_subscriber.cpp.s
+
+src/turtle_ref_pose.o: src/turtle_ref_pose.cpp.o
+.PHONY : src/turtle_ref_pose.o
+
+# target to build an object file
+src/turtle_ref_pose.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtle_ref_pose.dir/build.make CMakeFiles/turtle_ref_pose.dir/src/turtle_ref_pose.cpp.o
+.PHONY : src/turtle_ref_pose.cpp.o
+
+src/turtle_ref_pose.i: src/turtle_ref_pose.cpp.i
+.PHONY : src/turtle_ref_pose.i
+
+# target to preprocess a source file
+src/turtle_ref_pose.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtle_ref_pose.dir/build.make CMakeFiles/turtle_ref_pose.dir/src/turtle_ref_pose.cpp.i
+.PHONY : src/turtle_ref_pose.cpp.i
+
+src/turtle_ref_pose.s: src/turtle_ref_pose.cpp.s
+.PHONY : src/turtle_ref_pose.s
+
+# target to generate assembly for a file
+src/turtle_ref_pose.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtle_ref_pose.dir/build.make CMakeFiles/turtle_ref_pose.dir/src/turtle_ref_pose.cpp.s
+.PHONY : src/turtle_ref_pose.cpp.s
 
 src/twist_pub_sub.o: src/twist_pub_sub.cpp.o
 .PHONY : src/twist_pub_sub.o
@@ -362,6 +399,7 @@ help:
 	@echo "... uninstall"
 	@echo "... simple_publisher_cpp"
 	@echo "... simple_subscriber_cpp"
+	@echo "... turtle_ref_pose"
 	@echo "... twist_publisher_cpp"
 	@echo "... twist_pubsub_cpp"
 	@echo "... src/simple_publisher.o"
@@ -370,6 +408,9 @@ help:
 	@echo "... src/simple_subscriber.o"
 	@echo "... src/simple_subscriber.i"
 	@echo "... src/simple_subscriber.s"
+	@echo "... src/turtle_ref_pose.o"
+	@echo "... src/turtle_ref_pose.i"
+	@echo "... src/turtle_ref_pose.s"
 	@echo "... src/twist_pub_sub.o"
 	@echo "... src/twist_pub_sub.i"
 	@echo "... src/twist_pub_sub.s"

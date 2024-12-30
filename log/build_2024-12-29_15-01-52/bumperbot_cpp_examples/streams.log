@@ -1,0 +1,5 @@
+[0.015s] Invoking command in '/home/devam/bumperbot_ws/build/bumperbot_cpp_examples': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devam/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/devam/bumperbot_ws/build/bumperbot_cpp_examples -- -j24 -l24
+[0.051s] [ 50%] Built target twist_pubsub_cpp
+[0.051s] [ 50%] Built target twist_publisher_cpp
+[0.051s] [ 75%] Built target simple_subscriber_cpp
+[0.051s] [100%] Built target simple_publisher_cpp

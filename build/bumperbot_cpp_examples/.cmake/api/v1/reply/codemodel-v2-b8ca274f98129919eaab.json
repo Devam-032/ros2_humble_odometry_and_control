@@ -1,0 +1,115 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-a8344e4c30587a0b8953.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "bumperbot_cpp_examples",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "bumperbot_cpp_examples_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bumperbot_cpp_examples_uninstall-29537a9ca93f860f942b.json",
+					"name" : "bumperbot_cpp_examples_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "simple_publisher_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-simple_publisher_cpp-bcaa68b1a69155ecbdab.json",
+					"name" : "simple_publisher_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "simple_subscriber_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-simple_subscriber_cpp-1631a6969f1d369aecde.json",
+					"name" : "simple_subscriber_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "turtle_ref_pose::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-turtle_ref_pose-f206f8ab26a73041b7f3.json",
+					"name" : "turtle_ref_pose",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "twist_publisher_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-twist_publisher_cpp-5e3ce4a259dbc5f06e1f.json",
+					"name" : "twist_publisher_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "twist_pubsub_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-twist_pubsub_cpp-32334a0dcb302a0763f3.json",
+					"name" : "twist_pubsub_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-e0dbc5134bc726fd1965.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/devam/bumperbot_ws/build/bumperbot_cpp_examples",
+		"source" : "/home/devam/bumperbot_ws/src/bumperbot_cpp_examples"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

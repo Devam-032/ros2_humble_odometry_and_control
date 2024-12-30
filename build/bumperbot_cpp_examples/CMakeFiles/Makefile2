@@ -67,6 +67,7 @@ all: CMakeFiles/simple_publisher_cpp.dir/all
 all: CMakeFiles/twist_publisher_cpp.dir/all
 all: CMakeFiles/simple_subscriber_cpp.dir/all
 all: CMakeFiles/twist_pubsub_cpp.dir/all
+all: CMakeFiles/turtle_ref_pose.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -80,6 +81,7 @@ clean: CMakeFiles/simple_publisher_cpp.dir/clean
 clean: CMakeFiles/twist_publisher_cpp.dir/clean
 clean: CMakeFiles/simple_subscriber_cpp.dir/clean
 clean: CMakeFiles/twist_pubsub_cpp.dir/clean
+clean: CMakeFiles/turtle_ref_pose.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -167,7 +169,7 @@ CMakeFiles/simple_publisher_cpp.dir/clean:
 CMakeFiles/twist_publisher_cpp.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/twist_publisher_cpp.dir/build.make CMakeFiles/twist_publisher_cpp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/twist_publisher_cpp.dir/build.make CMakeFiles/twist_publisher_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/devam/bumperbot_ws/build/bumperbot_cpp_examples/CMakeFiles --progress-num=5,6 "Built target twist_publisher_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/devam/bumperbot_ws/build/bumperbot_cpp_examples/CMakeFiles --progress-num=7,8 "Built target twist_publisher_cpp"
 .PHONY : CMakeFiles/twist_publisher_cpp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -219,7 +221,7 @@ CMakeFiles/simple_subscriber_cpp.dir/clean:
 CMakeFiles/twist_pubsub_cpp.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/twist_pubsub_cpp.dir/build.make CMakeFiles/twist_pubsub_cpp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/twist_pubsub_cpp.dir/build.make CMakeFiles/twist_pubsub_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/devam/bumperbot_ws/build/bumperbot_cpp_examples/CMakeFiles --progress-num=7,8 "Built target twist_pubsub_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/devam/bumperbot_ws/build/bumperbot_cpp_examples/CMakeFiles --progress-num=9,10 "Built target twist_pubsub_cpp"
 .PHONY : CMakeFiles/twist_pubsub_cpp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -237,6 +239,32 @@ twist_pubsub_cpp: CMakeFiles/twist_pubsub_cpp.dir/rule
 CMakeFiles/twist_pubsub_cpp.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/twist_pubsub_cpp.dir/build.make CMakeFiles/twist_pubsub_cpp.dir/clean
 .PHONY : CMakeFiles/twist_pubsub_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/turtle_ref_pose.dir
+
+# All Build rule for target.
+CMakeFiles/turtle_ref_pose.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtle_ref_pose.dir/build.make CMakeFiles/turtle_ref_pose.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtle_ref_pose.dir/build.make CMakeFiles/turtle_ref_pose.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/devam/bumperbot_ws/build/bumperbot_cpp_examples/CMakeFiles --progress-num=5,6 "Built target turtle_ref_pose"
+.PHONY : CMakeFiles/turtle_ref_pose.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/turtle_ref_pose.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/devam/bumperbot_ws/build/bumperbot_cpp_examples/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/turtle_ref_pose.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/devam/bumperbot_ws/build/bumperbot_cpp_examples/CMakeFiles 0
+.PHONY : CMakeFiles/turtle_ref_pose.dir/rule
+
+# Convenience name for target.
+turtle_ref_pose: CMakeFiles/turtle_ref_pose.dir/rule
+.PHONY : turtle_ref_pose
+
+# clean rule for target.
+CMakeFiles/turtle_ref_pose.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtle_ref_pose.dir/build.make CMakeFiles/turtle_ref_pose.dir/clean
+.PHONY : CMakeFiles/turtle_ref_pose.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

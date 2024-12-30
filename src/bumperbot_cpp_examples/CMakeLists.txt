@@ -10,6 +10,10 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
+find_package(rcl_interfaces REQUIRED)
+find_package(turtlesim REQUIRED)
+
+include_directories(include)
 
 add_executable(simple_publisher_cpp src/simple_publisher.cpp)
 ament_target_dependencies(simple_publisher_cpp rclcpp std_msgs)
@@ -19,13 +23,21 @@ add_executable(simple_subscriber_cpp src/simple_subscriber.cpp)
 ament_target_dependencies(simple_subscriber_cpp rclcpp std_msgs)
 add_executable(twist_pubsub_cpp src/twist_pub_sub.cpp)
 ament_target_dependencies(twist_pubsub_cpp rclcpp geometry_msgs)
+add_executable(turtle_ref_pose src/turtle_ref_pose.cpp)
+ament_target_dependencies(turtle_ref_pose rclcpp turtlesim)
 
+
+install(
+  DIRECTORY include
+  DESTINATION include
+)
 
 install(TARGETS
   simple_publisher_cpp
   simple_subscriber_cpp
   twist_publisher_cpp
   twist_pubsub_cpp
+  turtle_ref_pose
   DESTINATION lib/${PROJECT_NAME}
 )
 
