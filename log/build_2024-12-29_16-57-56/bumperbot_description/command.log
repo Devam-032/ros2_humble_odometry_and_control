@@ -1,4 +1,0 @@
-Invoking command in '/home/devam/bumperbot_ws/build/bumperbot_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/devam/bumperbot_ws/build/bumperbot_description -- -j24 -l24
-Invoked command in '/home/devam/bumperbot_ws/build/bumperbot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/devam/bumperbot_ws/build/bumperbot_description -- -j24 -l24
-Invoking command in '/home/devam/bumperbot_ws/build/bumperbot_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/devam/bumperbot_ws/build/bumperbot_description
-Invoked command in '/home/devam/bumperbot_ws/build/bumperbot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/devam/bumperbot_ws/build/bumperbot_description

@@ -1,4 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target twist_publisher_cpp[0m
-[ 33%] Built target simple_publisher_cpp
-[ 66%] Built target simple_subscriber_cpp
-[ 83%] [32mBuilding CXX object CMakeFiles/twist_publisher_cpp.dir/src/twist_publisher.cpp.o[0m

@@ -1,4 +1,0 @@
-[31mCMake Error at CMakeLists.txt:14 (ament_pyton_install_package):
-  Unknown CMake command "ament_pyton_install_package".
-
-[0m

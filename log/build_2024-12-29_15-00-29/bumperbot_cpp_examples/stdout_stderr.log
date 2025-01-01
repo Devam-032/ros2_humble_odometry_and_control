@@ -1,4 +1,0 @@
-[ 25%] Built target simple_publisher_cpp
-[ 50%] Built target twist_pubsub_cpp
-[ 75%] Built target twist_publisher_cpp
-[100%] Built target simple_subscriber_cpp

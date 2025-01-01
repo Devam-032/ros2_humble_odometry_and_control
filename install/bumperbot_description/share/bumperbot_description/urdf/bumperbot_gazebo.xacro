@@ -1,1 +1,58 @@
-/home/devam/bumperbot_ws/src/bumperbot_description/urdf/bumperbot_gazebo.xacro
+<?xml version="1.0"?>
+<robot name="bumperbot" xmlns:xacro = "http://www.ros.org/wiki/xacro" >
+    <gazebo reference="wheel_right_link">
+        <mu1>100000000000000.0</mu1>
+        <mu2>100000000000000.0</mu2>
+        <kp>10000000000.0</kp>
+        <kd>10.0</kd>
+        <minDepth>.001</minDepth>
+        <maxVel>.1</maxVel>
+        <fdir1>1 0 0</fdir1>
+    </gazebo>
+    
+    <gazebo reference="wheel_left_link">
+        <mu1>100000000000000.0</mu1>
+        <mu2>100000000000000.0</mu2>
+        <kp>10000000000.0</kp>
+        <kd>10.0</kd>
+        <minDepth>.001</minDepth>
+        <maxVel>.1</maxVel>
+        <fdir1>1 0 0</fdir1><!-- for setting the direction of rotation-->
+    </gazebo>
+
+    <gazebo reference="castor_front_link">
+        <mu1>0.1</mu1>
+        <mu2>0.1</mu2>
+        <kp>1000000.0</kp>
+        <kd>100.0</kd>
+        <minDepth>.001</minDepth>
+        <maxVel>.1</maxVel>
+    </gazebo>
+
+    <gazebo reference="castor_rear_link">
+        <mu1>0.1</mu1>
+        <mu2>0.1</mu2>
+        <kp>1000000.0</kp>
+        <kd>100.0</kd>
+        <minDepth>.001</minDepth>
+        <maxVel>.1</maxVel>
+    </gazebo>
+
+    <!-- ROS 2 Control -->
+  <gazebo>
+    <!-- ROS 2 Humble -->
+    <xacro:if value="$(arg is_ignition)">
+      <plugin filename="ign_ros2_control-system" name="ign_ros2_control::IgnitionROS2ControlPlugin">
+        <parameters>$(find bumperbot_controller)/config/bumperbot_controllers.yaml</parameters>
+      </plugin>
+    </xacro:if>
+
+    <!-- ROS 2 Iron or above -->
+    <xacro:unless value="$(arg is_ignition)">
+      <plugin filename="gz_ros2_control-system" name="gz_ros2_control::GazeboSimROS2ControlPlugin">
+        <parameters>$(find bumperbot_controller)/config/bumperbot_controllers.yaml</parameters>
+      </plugin>
+    </xacro:unless>
+  </gazebo>
+
+</robot>

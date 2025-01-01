@@ -1,7 +1,0 @@
-[31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/symlink_install/install.cmake:43 (_install):
-  _install does not recognize sub-command SIMPLE_CONTROLLER
-Call Stack (most recent call first):
-  CMakeLists.txt:34 (install)
-
-[0m
-gmake: *** [Makefile:254: cmake_check_build_system] Error 1

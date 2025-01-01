@@ -1,1 +1,0 @@
-Invoking command in '/home/devam/bumperbot_ws/build/bumperbot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devam/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/devam/bumperbot_ws/build/bumperbot_controller -- -j24 -l24
