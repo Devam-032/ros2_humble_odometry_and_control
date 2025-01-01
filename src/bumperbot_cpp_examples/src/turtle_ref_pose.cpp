@@ -19,9 +19,11 @@ void TurtleRefPose::posecb1(const turtlesim::msg::Pose & pose){
     turtle2_pose = pose;
     float Tx = turtle1_pose.x - turtle2_pose.x;
     float Ty = turtle1_pose.y - turtle2_pose.y;
+    float theta = turtle1_pose.theta - turtle2_pose.theta;
     turtlesim::msg::Pose msg;
     msg.x = Tx;
     msg.y = Ty;
+    msg.theta = theta;
     pub->publish(msg);
 }
 

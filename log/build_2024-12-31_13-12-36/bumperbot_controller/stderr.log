@@ -1,0 +1,5 @@
+[31mCMake Error at CMakeLists.txt:14 (ament_pyton_install_package):
+  Unknown CMake command "ament_pyton_install_package".
+
+[0m
+gmake: *** [Makefile:254: cmake_check_build_system] Error 1

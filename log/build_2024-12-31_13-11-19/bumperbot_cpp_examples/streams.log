@@ -1,0 +1,13 @@
+[0.011s] Invoking command in '/home/devam/bumperbot_ws/build/bumperbot_cpp_examples': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devam/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/devam/bumperbot_ws/build/bumperbot_cpp_examples -- -j24 -l24
+[0.033s] [35m[1mConsolidate compiler generated dependencies of target turtle_ref_pose[0m
+[0.033s] [35m[1mConsolidate compiler generated dependencies of target twist_publisher_cpp[0m
+[0.035s] [35m[1mConsolidate compiler generated dependencies of target twist_pubsub_cpp[0m
+[0.035s] [35m[1mConsolidate compiler generated dependencies of target simple_publisher_cpp[0m
+[0.035s] [35m[1mConsolidate compiler generated dependencies of target simple_subscriber_cpp[0m
+[0.042s] [ 30%] [32mBuilding CXX object CMakeFiles/turtle_ref_pose.dir/src/turtle_ref_pose.cpp.o[0m
+[0.042s] [ 30%] Built target twist_publisher_cpp
+[0.047s] [ 50%] Built target simple_publisher_cpp
+[0.047s] [ 70%] Built target twist_pubsub_cpp
+[0.047s] [ 90%] Built target simple_subscriber_cpp
+[4.037s] [100%] [32m[1mLinking CXX executable turtle_ref_pose[0m
+[4.278s] [100%] Built target turtle_ref_pose
