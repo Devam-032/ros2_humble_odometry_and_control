@@ -8,6 +8,7 @@ import numpy as np
 from sensor_msgs.msg import JointState
 from rclpy.time import Time
 from rclpy.constants import S_TO_NS
+from math import cos,sin
 
 class SimpleController(Node):
     def __init__(self):
@@ -36,6 +37,10 @@ class SimpleController(Node):
         self.right_prev_pose = 0.0
         self.prev_t = self.get_clock().now()
 
+        self.x = 0.0
+        self.y = 0.0 
+        self.theta = 0.0
+
         self.joint_state_sub = self.create_subscription(JointState,"joint_states",self.jointCB,10)
 
     def velCb(self,msg):
@@ -58,13 +63,23 @@ class SimpleController(Node):
         dr = right_curr_pose - self.right_prev_pose
         dt = curr_t - self.prev_t
 
-        fi_left = dl/(dt.nanoseconds/S_TO_NS)
-        fi_right = dr/(dt.nanoseconds/S_TO_NS)
+        dt = (dt.nanoseconds/S_TO_NS)
+
+        fi_left = dl/dt
+        fi_right = dr/dt
 
         linear = self.wheel_radius*(fi_right+fi_left)/2
         angular = self.wheel_radius*(fi_right-fi_left)/self.wheel_separation
 
+        d_s = linear*dt
+        d_theta = angular*dt
+
+        self.theta+=d_theta
+        self.x += d_s*cos(self.theta)
+        self.y += d_s*sin(self.theta)
+
         self.get_logger().info(f"Linear velocity: {linear} and angular velocity: {angular}")
+        self.get_logger().info(f"x_pos: {self.x} y_pos: {self.y} orientation = {self.theta}")
 
 def main():
     rclpy.init()

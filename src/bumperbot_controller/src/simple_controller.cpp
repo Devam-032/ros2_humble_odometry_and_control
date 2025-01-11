@@ -3,7 +3,7 @@
 
 using std::placeholders::_1;
 
-SimpleController::SimpleController(const std::string &name) : Node(name),left_prev_pose(0.0),right_prev_pose(0.0)
+SimpleController::SimpleController(const std::string &name) : Node(name),left_prev_pose(0.0),right_prev_pose(0.0),x(0.0),y(0.0)
 {
     declare_parameter("wheel_radius",0.033);
     declare_parameter("wheel_separation",0.17);
@@ -59,6 +59,12 @@ void SimpleController::jointCb(const sensor_msgs::msg::JointState &msg){
     double angular = wheel_radius*(fr-fl)/wheel_separation;
 
     RCLCPP_INFO_STREAM(get_logger(), "linear:"<<linear<<" angular:"<<angular);
+
+    theta += angular*dt.seconds();
+    x += linear*dt.seconds()*cos(theta);
+    y += linear*dt.seconds()*sin(theta);
+
+    RCLCPP_INFO_STREAM(get_logger(),"x:"<<x<<"y:"<<y<<"theta:"<<theta);
 }
 
 int main(int argc, char* argv[]){
