@@ -1,42 +1,51 @@
-# Kinematics and Twist Message Practice
+# Kinematics and Twist Message Practice 🚀
 
 ## Overview
 This repository contains implementations and practice scripts based on key learnings in mobile robotics and ROS 2. The content is enhanced with additional scripts to deepen understanding and practical skills in ROS 2.
 
 ## Key Learnings
-### Kinematics
+### Kinematics 🧮
 - Understanding the fundamentals of kinematics in mobile robotics.
 - Implementing forward and inverse kinematics for a differential drive robot.
 - Practical application of kinematic equations to control robot motion.
 
-### Twist Message Handling
+### Twist Message Handling 🔄
 - Publishing and subscribing to ROS 2 `geometry_msgs/Twist` messages.
 - Implementing publishers to control robot velocity.
 - Creating subscribers to process and respond to Twist messages.
 - Combining multiple subscribers and publishers into a single script for efficient data handling and robot control.
 
-### Publishers and Subscribers
+### Publishers and Subscribers 📡
 - Gained an in-depth understanding of how ROS 2 publishers and subscribers facilitate communication between nodes.
 - Developed scripts to experiment with message flow, including publishing velocity commands and subscribing to feedback data.
 - Practiced combining multiple subscribers and publishers for streamlined and modular robot control.
 
-### URDF and Bot Design
+### URDF and Bot Design 🤖
 - Designed a robot model using URDF (Unified Robot Description Format).
 - Incorporated various meshes to represent robot components, ensuring an accurate and detailed visual representation.
 - Utilized URDF to define joint structures, linkages, and physical properties of the robot.
 - Verified the URDF design in simulation environments for functional testing.
 
-### Differential Drive Controller
-- Implemented the `diff_drive_controller` to enable precise control of the differential drive robot.
+### Differential Drive Controller 🛞
+- Used the `diff_drive_controller` to enable precise control of the differential drive robot without modifications.
 - Configured the controller to interface seamlessly with the robot's hardware and ROS 2 topics.
-- Used the controller to translate velocity commands into wheel-specific control inputs.
+- Utilized the controller to translate velocity commands into wheel-specific control inputs.
 
-### Launch Files
+### Custom Simple Controller 🛠️
+- Implemented a custom `simple_controller` in both Python and C++.
+- Designed to offer direct control over the robot's movement and velocity based on specific requirements.
+- Added functionality to extract velocity information using `joint_states` for enhanced feedback and control.
+
+### Transform Publisher and Subscriber 🔀
+- Added a transform publisher and subscriber in both Python and C++.
+- Created a Python service to retrieve transform data, enabling efficient data handling and processing.
+
+### Launch Files 🚀
 - Developed launch files to streamline the process of launching the differential drive controller for the designed robot.
 - Created a launch file to initialize the robot in Gazebo Ignition, with added functionality to automatically detect the Gazebo version based on the ROS 2 version.
 - Enhanced compatibility and support for various ROS 2 versions through dynamic version checking in the launch files.
 
-## Practice Enhancements
+## Practice Enhancements 💡
 To further explore and solidify the concepts, additional practice scripts were developed:
 
 ### C++ Scripts
@@ -50,6 +59,13 @@ To further explore and solidify the concepts, additional practice scripts were d
 3. **Combined Publisher and Subscriber**
    - Merges two subscribers and one publisher into a single script for streamlined functionality.
 
+4. **Transform Publisher and Subscriber**
+   - Publishes and subscribes to transforms, facilitating spatial awareness and coordinate transformations.
+
+5. **Simple Controller**
+   - Implements a basic controller for managing robot movement and velocity commands in C++.
+   - Extracts velocity information using `joint_states` for feedback and control.
+
 ### Python Scripts
 1. **Twist Message Publisher**
    - Implements a Python-based publisher for Twist messages.
@@ -61,12 +77,22 @@ To further explore and solidify the concepts, additional practice scripts were d
 3. **Combined Publisher and Subscriber**
    - Python script combining two subscribers and one publisher to manage robot velocity and control logic efficiently.
 
-## Prerequisites
+4. **Transform Publisher and Subscriber**
+   - Publishes and subscribes to transforms for managing robot state and movement in a spatial context.
+
+5. **Transform Service**
+   - Python service for retrieving and processing transform data on demand.
+
+6. **Simple Controller**
+   - Python implementation of a custom controller for managing robot movement and velocity commands.
+   - Extracts velocity information using `joint_states` for feedback and control.
+
+## Prerequisites 🛠️
 - ROS 2 installed on your system.
 - Basic understanding of ROS 2 concepts, including nodes, publishers, and subscribers.
 - Familiarity with C++ and Python programming.
 
-## How to Run
+## How to Run ▶️
 1. Clone this repository:
    ```bash
    git clone https://github.com/Devam-032/ros2_humble_odometry_and_control/tree/main
@@ -99,14 +125,14 @@ To further explore and solidify the concepts, additional practice scripts were d
      ros2 launch bumperbot_description gazebo.launch.py
      ```
 
-## Future Plans
+## Future Plans 🌟
 - Implementing advanced odometry and control topics.
 - Adding simulation environments for testing and visualization.
 
-## Acknowledgments
+## Acknowledgments 🙌
 - Contributions from various open-source robotics resources and communities.
 
-## Contact
+## Contact 📬
 For any questions or feedback, please reach out via:
 - Email: devam3428@gmail.com
 - GitHub: [Devam-032 GitHub Profile](https://github.com/Devam-032)
