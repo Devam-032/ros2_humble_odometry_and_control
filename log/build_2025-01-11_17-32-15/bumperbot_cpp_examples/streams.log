@@ -1,0 +1,63 @@
+[0.055s] Invoking command in '/home/devam/bumperbot_ws/build/bumperbot_cpp_examples': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devam/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/devam/bumperbot_ws/build/bumperbot_cpp_examples -- -j24 -l24
+[0.088s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.170s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.199s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.201s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.206s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.213s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.222s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.246s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.248s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.319s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.357s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.365s] -- Found turtlesim: 1.4.2 (/opt/ros/humble/share/turtlesim/cmake)
+[0.396s] -- Found tf2_ros: 0.25.9 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.459s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.501s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.501s] -- Configured cppcheck include dirs: /home/devam/bumperbot_ws/src/bumperbot_cpp_examples/include
+[0.502s] -- Configured cppcheck exclude dirs and/or files: 
+[0.502s] -- Added test 'lint_cmake' to check CMake code style
+[0.503s] -- Added test 'uncrustify' to check C / C++ code style
+[0.503s] -- Configured uncrustify additional arguments: 
+[0.503s] -- Added test 'xmllint' to check XML markup files
+[0.504s] -- Configuring done
+[0.521s] -- Generating done
+[0.526s] -- Build files have been written to: /home/devam/bumperbot_ws/build/bumperbot_cpp_examples
+[0.542s] [35m[1mConsolidate compiler generated dependencies of target turtle_ref_pose[0m
+[0.544s] [35m[1mConsolidate compiler generated dependencies of target simple_publisher_cpp[0m
+[0.544s] [35m[1mConsolidate compiler generated dependencies of target twist_pubsub_cpp[0m
+[0.544s] [35m[1mConsolidate compiler generated dependencies of target twist_publisher_cpp[0m
+[0.544s] [35m[1mConsolidate compiler generated dependencies of target simple_subscriber_cpp[0m
+[0.547s] [  8%] [32mBuilding CXX object CMakeFiles/simple_tf_kinematics.dir/src/simple_tf_kinematics.cpp.o[0m
+[0.553s] [ 33%] Built target twist_publisher_cpp
+[0.553s] [ 41%] Built target simple_subscriber_cpp
+[0.554s] [ 58%] Built target twist_pubsub_cpp
+[0.554s] [ 75%] Built target turtle_ref_pose
+[0.556s] [ 91%] Built target simple_publisher_cpp
+[0.558s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_tf_kinematics.cpp:3:1:[m[K [01;31m[Kerror: [m[K‘[01m[KSimpleTfKinematics[m[K’ does not name a type
+[0.558s]     3 | [01;31m[KSimpleTfKinematics[m[K::SimpleTfKinematics(const std::string &name)
+[0.558s]       | [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[0.560s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_tf_kinematics.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[0.560s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_tf_kinematics.cpp:27:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ has not been declared
+[0.560s]    27 |     [01;31m[Krclcpp[m[K::init(argc,argv);
+[0.560s]       |     [01;31m[K^~~~~~[m[K
+[0.563s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_tf_kinematics.cpp:28:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kmake_shared[m[K’ is not a member of ‘[01m[Kstd[m[K’
+[0.563s]    28 |     auto node = std::[01;31m[Kmake_shared[m[K<SimpleTfKinematics>("simple_tf_kinematics");
+[0.563s]       |                      [01;31m[K^~~~~~~~~~~[m[K
+[0.563s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_tf_kinematics.cpp:2:1:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::make_shared[m[K’ is defined in header ‘[01m[K<memory>[m[K’; did you forget to ‘[01m[K#include <memory>[m[K’?
+[0.563s]     1 | #include "bumperbot_cpp_examples/simple_tf_kinematics.hpp"
+[0.563s]   +++ |+[32m[K#include <memory>[m[K
+[0.563s]     2 | 
+[0.563s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_tf_kinematics.cpp:28:34:[m[K [01;31m[Kerror: [m[K‘[01m[KSimpleTfKinematics[m[K’ was not declared in this scope
+[0.563s]    28 |     auto node = std::make_shared<[01;31m[KSimpleTfKinematics[m[K>("simple_tf_kinematics");
+[0.563s]       |                                  [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[0.564s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_tf_kinematics.cpp:29:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ has not been declared
+[0.564s]    29 |     [01;31m[Krclcpp[m[K::spin(node);
+[0.564s]       |     [01;31m[K^~~~~~[m[K
+[0.564s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_tf_kinematics.cpp:30:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ has not been declared
+[0.564s]    30 |     [01;31m[Krclcpp[m[K::shutdown();
+[0.564s]       |     [01;31m[K^~~~~~[m[K
+[0.566s] gmake[2]: *** [CMakeFiles/simple_tf_kinematics.dir/build.make:76: CMakeFiles/simple_tf_kinematics.dir/src/simple_tf_kinematics.cpp.o] Error 1
+[0.566s] gmake[1]: *** [CMakeFiles/Makefile2:277: CMakeFiles/simple_tf_kinematics.dir/all] Error 2
+[0.566s] gmake: *** [Makefile:146: all] Error 2
+[0.567s] Invoked command in '/home/devam/bumperbot_ws/build/bumperbot_cpp_examples' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devam/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/devam/bumperbot_ws/build/bumperbot_cpp_examples -- -j24 -l24

@@ -1,0 +1,6 @@
+{
+  "package_name": "bumperbot_msgs",
+  "non_idl_tuples": [
+    "/home/devam/bumperbot_ws/src/bumperbot_msgs:srv/GetTransform.srv"
+  ]
+}

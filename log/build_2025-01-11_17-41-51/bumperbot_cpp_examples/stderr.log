@@ -1,0 +1,7 @@
+[01m[K/home/devam/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_tf_kinematics.cpp:[m[K In constructor ‘[01m[KSimpleTFKinematics::SimpleTFKinematics(const string&)[m[K’:
+[01m[K/home/devam/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_tf_kinematics.cpp:11:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstatic_tf_stamped[m[K’ was not declared in this scope
+   11 |     [01;31m[Kstatic_tf_stamped[m[K.transform.translation.x = 0.0;
+      |     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/simple_tf_kinematics.dir/build.make:76: CMakeFiles/simple_tf_kinematics.dir/src/simple_tf_kinematics.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:277: CMakeFiles/simple_tf_kinematics.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,16 @@
+[0.011s] Invoking command in '/home/devam/bumperbot_ws/build/bumperbot_cpp_examples': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devam/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/devam/bumperbot_ws/build/bumperbot_cpp_examples -- -j24 -l24
+[0.043s] [35m[1mConsolidate compiler generated dependencies of target simple_tf_kinematics[0m
+[0.050s] [ 25%] Built target twist_pubsub_cpp
+[0.050s] [ 33%] Built target simple_subscriber_cpp
+[0.051s] [ 50%] Built target turtle_ref_pose
+[0.052s] [ 66%] Built target twist_publisher_cpp
+[0.055s] [ 83%] Built target simple_publisher_cpp
+[0.055s] [ 91%] [32mBuilding CXX object CMakeFiles/simple_tf_kinematics.dir/src/simple_tf_kinematics.cpp.o[0m
+[1.280s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_tf_kinematics.cpp:[m[K In constructor ‘[01m[KSimpleTFKinematics::SimpleTFKinematics(const string&)[m[K’:
+[1.280s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_tf_kinematics.cpp:11:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstatic_tf_stamped[m[K’ was not declared in this scope
+[1.280s]    11 |     [01;31m[Kstatic_tf_stamped[m[K.transform.translation.x = 0.0;
+[1.280s]       |     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[1.664s] gmake[2]: *** [CMakeFiles/simple_tf_kinematics.dir/build.make:76: CMakeFiles/simple_tf_kinematics.dir/src/simple_tf_kinematics.cpp.o] Error 1
+[1.665s] gmake[1]: *** [CMakeFiles/Makefile2:277: CMakeFiles/simple_tf_kinematics.dir/all] Error 2
+[1.665s] gmake: *** [Makefile:146: all] Error 2
+[1.666s] Invoked command in '/home/devam/bumperbot_ws/build/bumperbot_cpp_examples' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devam/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/devam/bumperbot_ws/build/bumperbot_cpp_examples -- -j24 -l24

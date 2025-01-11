@@ -1,0 +1,7 @@
+[35m[1mConsolidate compiler generated dependencies of target simple_tf_kinematics[0m
+[ 25%] Built target twist_pubsub_cpp
+[ 33%] Built target simple_subscriber_cpp
+[ 50%] Built target turtle_ref_pose
+[ 66%] Built target twist_publisher_cpp
+[ 83%] Built target simple_publisher_cpp
+[ 91%] [32mBuilding CXX object CMakeFiles/simple_tf_kinematics.dir/src/simple_tf_kinematics.cpp.o[0m

@@ -12,6 +12,7 @@ find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(rcl_interfaces REQUIRED)
 find_package(turtlesim REQUIRED)
+find_package(tf2_ros REQUIRED)
 
 include_directories(include)
 
@@ -25,6 +26,8 @@ add_executable(twist_pubsub_cpp src/twist_pub_sub.cpp)
 ament_target_dependencies(twist_pubsub_cpp rclcpp geometry_msgs)
 add_executable(turtle_ref_pose src/turtle_ref_pose.cpp)
 ament_target_dependencies(turtle_ref_pose rclcpp turtlesim)
+add_executable(simple_tf_kinematics src/simple_tf_kinematics.cpp)
+ament_target_dependencies(simple_tf_kinematics rclcpp geometry_msgs tf2_ros)
 
 
 install(
@@ -38,6 +41,7 @@ install(TARGETS
   twist_publisher_cpp
   twist_pubsub_cpp
   turtle_ref_pose
+  simple_tf_kinematics
   DESTINATION lib/${PROJECT_NAME}
 )
 

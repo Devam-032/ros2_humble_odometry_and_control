@@ -1,0 +1,40 @@
+[0.013s] Invoking command in '/home/devam/bumperbot_ws/build/bumperbot_cpp_examples': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devam/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/devam/bumperbot_ws/build/bumperbot_cpp_examples -- -j24 -l24
+[0.045s] [35m[1mConsolidate compiler generated dependencies of target simple_tf_kinematics[0m
+[0.052s] [ 16%] Built target simple_publisher_cpp
+[0.055s] [ 33%] Built target twist_publisher_cpp
+[0.056s] [ 50%] Built target simple_subscriber_cpp
+[0.057s] [ 58%] [32mBuilding CXX object CMakeFiles/simple_tf_kinematics.dir/src/simple_tf_kinematics.cpp.o[0m
+[0.058s] [ 75%] Built target twist_pubsub_cpp
+[0.061s] [ 91%] Built target turtle_ref_pose
+[2.131s] [100%] [32m[1mLinking CXX executable simple_tf_kinematics[0m
+[2.238s] [100%] Built target simple_tf_kinematics
+[2.247s] Invoked command in '/home/devam/bumperbot_ws/build/bumperbot_cpp_examples' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devam/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/devam/bumperbot_ws/build/bumperbot_cpp_examples -- -j24 -l24
+[2.248s] Invoking command in '/home/devam/bumperbot_ws/build/bumperbot_cpp_examples': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devam/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --install /home/devam/bumperbot_ws/build/bumperbot_cpp_examples
+[2.254s] -- Install configuration: ""
+[2.254s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/include/include
+[2.254s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/include/include/bumperbot_cpp_examples
+[2.254s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/include/include/bumperbot_cpp_examples/simple_tf_kinematics.hpp
+[2.254s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/include/include/bumperbot_cpp_examples/turtle_ref_pose.hpp
+[2.254s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/lib/bumperbot_cpp_examples/simple_publisher_cpp
+[2.254s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/lib/bumperbot_cpp_examples/simple_subscriber_cpp
+[2.254s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/lib/bumperbot_cpp_examples/twist_publisher_cpp
+[2.254s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/lib/bumperbot_cpp_examples/twist_pubsub_cpp
+[2.254s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/lib/bumperbot_cpp_examples/turtle_ref_pose
+[2.255s] -- Installing: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/lib/bumperbot_cpp_examples/simple_tf_kinematics
+[2.256s] -- Set runtime path of "/home/devam/bumperbot_ws/install/bumperbot_cpp_examples/lib/bumperbot_cpp_examples/simple_tf_kinematics" to ""
+[2.256s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/share/ament_index/resource_index/package_run_dependencies/bumperbot_cpp_examples
+[2.256s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/share/ament_index/resource_index/parent_prefix_path/bumperbot_cpp_examples
+[2.256s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/environment/ament_prefix_path.sh
+[2.256s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/environment/ament_prefix_path.dsv
+[2.256s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/environment/path.sh
+[2.256s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/environment/path.dsv
+[2.256s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/local_setup.bash
+[2.256s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/local_setup.sh
+[2.256s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/local_setup.zsh
+[2.256s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/local_setup.dsv
+[2.256s] -- Installing: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/package.dsv
+[2.256s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/share/ament_index/resource_index/packages/bumperbot_cpp_examples
+[2.256s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/cmake/bumperbot_cpp_examplesConfig.cmake
+[2.256s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/cmake/bumperbot_cpp_examplesConfig-version.cmake
+[2.256s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/package.xml
+[2.258s] Invoked command in '/home/devam/bumperbot_ws/build/bumperbot_cpp_examples' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devam/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --install /home/devam/bumperbot_ws/build/bumperbot_cpp_examples

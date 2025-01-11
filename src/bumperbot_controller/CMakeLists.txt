@@ -12,6 +12,7 @@ find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(Eigen3 REQUIRED)
+find_package(sensor_msgs REQUIRED)
 
 ament_python_install_package(${PROJECT_NAME})
 
@@ -24,6 +25,7 @@ ament_target_dependencies(simple_controller
   geometry_msgs
   std_msgs
   ${Eigen_LIBRARIES}
+  sensor_msgs
 )
 
 install(

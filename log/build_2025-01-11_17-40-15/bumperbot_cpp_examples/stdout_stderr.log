@@ -1,0 +1,33 @@
+[35m[1mConsolidate compiler generated dependencies of target simple_tf_kinematics[0m
+[ 16%] Built target simple_subscriber_cpp
+[ 33%] Built target turtle_ref_pose
+[ 41%] [32mBuilding CXX object CMakeFiles/simple_tf_kinematics.dir/src/simple_tf_kinematics.cpp.o[0m
+[ 58%] Built target twist_pubsub_cpp
+[ 75%] Built target simple_publisher_cpp
+[ 91%] Built target twist_publisher_cpp
+[01m[K/home/devam/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_tf_kinematics.cpp:3:1:[m[K [01;31m[Kerror: [m[K‘[01m[KSimpleTfKinematics[m[K’ does not name a type; did you mean ‘[01m[KSimpleTFKinematics[m[K’?
+    3 | [01;31m[KSimpleTfKinematics[m[K::SimpleTfKinematics(const std::string &name)
+      | [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+      | [32m[KSimpleTFKinematics[m[K
+[01m[K/home/devam/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_tf_kinematics.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/devam/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_tf_kinematics.cpp:28:34:[m[K [01;31m[Kerror: [m[K‘[01m[KSimpleTfKinematics[m[K’ was not declared in this scope; did you mean ‘[01m[KSimpleTFKinematics[m[K’?
+   28 |     auto node = std::make_shared<[01;31m[KSimpleTfKinematics[m[K>("simple_tf_kinematics");
+      |                                  [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+      |                                  [32m[KSimpleTFKinematics[m[K
+[01m[K/home/devam/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_tf_kinematics.cpp:28:53:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<<expression error> >(const char [21])[m[K’
+   28 |     auto node = [01;31m[Kstd::make_shared<SimpleTfKinematics>("simple_tf_kinematics")[m[K;
+      |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/devam/bumperbot_ws/src/bumperbot_cpp_examples/include/bumperbot_cpp_examples/simple_tf_kinematics.hpp:4[m[K,
+                 from [01m[K/home/devam/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_tf_kinematics.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+  875 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/devam/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_tf_kinematics.cpp:28:53:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   28 |     auto node = [01;31m[Kstd::make_shared<SimpleTfKinematics>("simple_tf_kinematics")[m[K;
+      |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/simple_tf_kinematics.dir/build.make:76: CMakeFiles/simple_tf_kinematics.dir/src/simple_tf_kinematics.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:277: CMakeFiles/simple_tf_kinematics.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -852,6 +852,12 @@ CMakeFiles/simple_controller.dir/src/simple_controller.cpp.o
  /usr/include/eigen3/Eigen/src/Core/StlIterators.h
  /usr/include/eigen3/Eigen/src/Core/GlobalFunctions.h
  /usr/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h
+ /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/joint_state.hpp
+ /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__struct.hpp
+ /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__builder.hpp
+ /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__traits.hpp
+ /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__type_support.hpp
+ /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
  /usr/include/eigen3/Eigen/Geometry
  /usr/include/eigen3/Eigen/Core
  /usr/include/eigen3/Eigen/SVD

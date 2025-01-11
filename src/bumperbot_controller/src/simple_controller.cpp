@@ -3,7 +3,7 @@
 
 using std::placeholders::_1;
 
-SimpleController::SimpleController(const std::string &name) : Node(name)
+SimpleController::SimpleController(const std::string &name) : Node(name),left_prev_pose(0.0),right_prev_pose(0.0)
 {
     declare_parameter("wheel_radius",0.033);
     declare_parameter("wheel_separation",0.17);
@@ -22,6 +22,11 @@ SimpleController::SimpleController(const std::string &name) : Node(name)
 
     RCLCPP_INFO_STREAM(get_logger(),"The conversion matrix is \n " << speed_conversion);
 
+    joint_sub = create_subscription<sensor_msgs::msg::JointState>("/joint_states",10,
+    std::bind(&SimpleController::jointCb,this,_1));
+
+    prev_time = get_clock()->now();
+
 }
 
 void SimpleController::velCb(const geometry_msgs::msg::TwistStamped &msg){
@@ -34,6 +39,26 @@ void SimpleController::velCb(const geometry_msgs::msg::TwistStamped &msg){
 
     wheel_cmd_pub->publish(wheel_speed_msg);
 
+}
+
+void SimpleController::jointCb(const sensor_msgs::msg::JointState &msg){
+    double dp_left = msg.position[1] - left_prev_pose;
+    double dp_right = msg.position[0] - right_prev_pose;
+
+    rclcpp::Time msg_time = msg.header.stamp;
+    rclcpp::Duration dt = msg_time - prev_time;
+
+    left_prev_pose = msg.position[1];
+    right_prev_pose = msg.position[0];
+    prev_time = msg_time;
+
+    double fl = dp_left/dt.seconds();
+    double fr = dp_right/dt.seconds();
+
+    double linear = wheel_radius*(fl+fr)/2;
+    double angular = wheel_radius*(fr-fl)/wheel_separation;
+
+    RCLCPP_INFO_STREAM(get_logger(), "linear:"<<linear<<" angular:"<<angular);
 }
 
 int main(int argc, char* argv[]){
