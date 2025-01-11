@@ -11,6 +11,7 @@ setup.py
 bumperbot_py_examples/__init__.py
 bumperbot_py_examples/simple_publisher.py
 bumperbot_py_examples/simple_subscriber.py
+bumperbot_py_examples/simple_tf_kinematics.py
 bumperbot_py_examples/turtlesim_reference_pose_measurement.py
 bumperbot_py_examples/twist_subscriber.py
 resource/bumperbot_py_examples
