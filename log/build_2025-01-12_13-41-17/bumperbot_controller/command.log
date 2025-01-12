@@ -1,0 +1,2 @@
+Invoking command in '/home/devam/bumperbot_ws/build/bumperbot_controller': /usr/bin/cmake --build /home/devam/bumperbot_ws/build/bumperbot_controller -- -j24 -l24
+Invoked command in '/home/devam/bumperbot_ws/build/bumperbot_controller' returned '2': /usr/bin/cmake --build /home/devam/bumperbot_ws/build/bumperbot_controller -- -j24 -l24

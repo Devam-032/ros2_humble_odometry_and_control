@@ -6,9 +6,12 @@ from std_msgs.msg import Float64MultiArray
 from geometry_msgs.msg import TwistStamped 
 import numpy as np 
 from sensor_msgs.msg import JointState
+from nav_msgs.msg import Odometry
 from rclpy.time import Time
 from rclpy.constants import S_TO_NS
 from math import cos,sin
+from tf_transformations import quaternion_from_euler
+
 
 class SimpleController(Node):
     def __init__(self):
@@ -42,6 +45,18 @@ class SimpleController(Node):
         self.theta = 0.0
 
         self.joint_state_sub = self.create_subscription(JointState,"joint_states",self.jointCB,10)
+        self.odom_pub = self.create_publisher(Odometry,"bumperbot_odom",10)
+
+        self.odom_msg = Odometry()
+        self.odom_msg.header.frame_id = "odom"
+        self.odom_msg.child_frame_id = "base_footprint"
+        self.odom_msg.pose.pose.orientation.x = 0.0
+        self.odom_msg.pose.pose.orientation.y = 0.0
+        self.odom_msg.pose.pose.orientation.z = 0.0
+        self.odom_msg.pose.pose.orientation.w = 0.0
+        self.odom_msg.pose.pose.position.x = 0.0
+        self.odom_msg.pose.pose.position.y = 0.0
+        self.odom_msg.pose.pose.position.z = 0.0
 
     def velCb(self,msg):
         robot_speed = np.array([
@@ -78,8 +93,25 @@ class SimpleController(Node):
         self.x += d_s*cos(self.theta)
         self.y += d_s*sin(self.theta)
 
-        self.get_logger().info(f"Linear velocity: {linear} and angular velocity: {angular}")
-        self.get_logger().info(f"x_pos: {self.x} y_pos: {self.y} orientation = {self.theta}")
+        quaternion = quaternion_from_euler(0,0,self.theta)
+
+        self.odom_msg.header.stamp = self.get_clock().now().to_msg()
+        self.odom_msg.pose.pose.orientation.x = quaternion[0]
+        self.odom_msg.pose.pose.orientation.y = quaternion[1]
+        self.odom_msg.pose.pose.orientation.z = quaternion[2]
+        self.odom_msg.pose.pose.orientation.w = quaternion[3]
+        self.odom_msg.pose.pose.position.x = self.x
+        self.odom_msg.pose.pose.position.y = self.y
+        self.odom_msg.pose.pose.position.z = 0.0
+        self.odom_msg.twist.twist.linear.x = linear
+        self.odom_msg.twist.twist.angular.z = angular
+
+        # self.get_logger().info(f"Linear velocity: {linear} and angular velocity: {angular}")
+        # self.get_logger().info(f"x_pos: {self.x} y_pos: {self.y} orientation = {self.theta}")
+
+        self.get_logger().info(f"The message is being published on the bumperbot_odom topic.")
+
+        
 
 def main():
     rclpy.init()

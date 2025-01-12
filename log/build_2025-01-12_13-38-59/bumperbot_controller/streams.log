@@ -1,0 +1,37 @@
+[0.015s] Invoking command in '/home/devam/bumperbot_ws/build/bumperbot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devam/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/devam/bumperbot_ws/build/bumperbot_controller -- -j24 -l24
+[0.035s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.113s] -- Found rclpy: 3.3.15 (/opt/ros/humble/share/rclpy/cmake)
+[0.113s] -- Found std_msgs: 4.2.4 (/opt/ros/humble/share/std_msgs/cmake)
+[0.135s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.136s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.139s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.145s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.152s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.164s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.171s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.186s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.187s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.253s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.275s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.287s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.305s] -- Configuring incomplete, errors occurred!
+[0.305s] See also "/home/devam/bumperbot_ws/build/bumperbot_controller/CMakeFiles/CMakeOutput.log".
+[0.305s] [31mCMake Error at CMakeLists.txt:17 (find_package):
+[0.305s]   By not providing "Findtf_transformations.cmake" in CMAKE_MODULE_PATH this
+[0.305s]   project has asked CMake to find a package configuration file provided by
+[0.305s]   "tf_transformations", but CMake did not find one.
+[0.305s] 
+[0.305s]   Could not find a package configuration file provided by
+[0.305s]   "tf_transformations" with any of the following names:
+[0.305s] 
+[0.305s]     tf_transformationsConfig.cmake
+[0.305s]     tf_transformations-config.cmake
+[0.305s] 
+[0.305s]   Add the installation prefix of "tf_transformations" to CMAKE_PREFIX_PATH or
+[0.305s]   set "tf_transformations_DIR" to a directory containing one of the above
+[0.305s]   files.  If "tf_transformations" provides a separate development package or
+[0.305s]   SDK, be sure it has been installed.
+[0.305s] 
+[0.305s] [0m
+[0.309s] gmake: *** [Makefile:295: cmake_check_build_system] Error 1
+[0.311s] Invoked command in '/home/devam/bumperbot_ws/build/bumperbot_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devam/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/devam/bumperbot_ws/build/bumperbot_controller -- -j24 -l24

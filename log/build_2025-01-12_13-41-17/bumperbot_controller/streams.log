@@ -1,0 +1,46 @@
+[0.016s] Invoking command in '/home/devam/bumperbot_ws/build/bumperbot_controller': /usr/bin/cmake --build /home/devam/bumperbot_ws/build/bumperbot_controller -- -j24 -l24
+[0.029s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.119s] -- Found rclpy: 3.3.15 (/opt/ros/humble/share/rclpy/cmake)
+[0.119s] -- Found std_msgs: 4.2.4 (/opt/ros/humble/share/std_msgs/cmake)
+[0.133s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.134s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.137s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.143s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.150s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.162s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.169s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.184s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.184s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.255s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.279s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.288s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.330s] Error parsing '/home/devam/bumperbot_ws/src/bumperbot_controller/package.xml':
+[0.357s] Traceback (most recent call last):
+[0.357s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 150, in <module>
+[0.357s]     main()
+[0.357s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 53, in main
+[0.357s]     raise e
+[0.357s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 49, in main
+[0.357s]     package = parse_package_string(
+[0.357s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 786, in parse_package_string
+[0.358s]     raise InvalidPackage('Error(s):%s' % (''.join(['\n- %s' % e for e in errors])), filename)
+[0.358s] catkin_pkg.package.InvalidPackage: Error(s) in package '/home/devam/bumperbot_ws/src/bumperbot_controller/package.xml':
+[0.358s] Error(s):
+[0.358s] - The generic dependency on 'tf_transformations' is redundant with: exec_depend
+[0.371s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):
+[0.371s]   execute_process(/usr/bin/python3
+[0.371s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[0.371s]   /home/devam/bumperbot_ws/src/bumperbot_controller/package.xml
+[0.371s]   /home/devam/bumperbot_ws/build/bumperbot_controller/ament_cmake_core/package.cmake)
+[0.371s]   returned error code 1
+[0.371s] Call Stack (most recent call first):
+[0.371s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[0.371s]   /opt/ros/humble/share/ament_cmake_python/cmake/ament_python_install_package.cmake:60 (ament_package_xml)
+[0.372s]   /opt/ros/humble/share/ament_cmake_python/cmake/ament_python_install_package.cmake:39 (_ament_cmake_python_install_package)
+[0.372s]   CMakeLists.txt:19 (ament_python_install_package)
+[0.372s] 
+[0.372s] [0m
+[0.372s] -- Configuring incomplete, errors occurred!
+[0.372s] See also "/home/devam/bumperbot_ws/build/bumperbot_controller/CMakeFiles/CMakeOutput.log".
+[0.376s] gmake: *** [Makefile:295: cmake_check_build_system] Error 1
+[0.380s] Invoked command in '/home/devam/bumperbot_ws/build/bumperbot_controller' returned '2': /usr/bin/cmake --build /home/devam/bumperbot_ws/build/bumperbot_controller -- -j24 -l24
