@@ -1,0 +1,23 @@
+[0.022s] Invoking command in '/home/devam/bumperbot_ws/build/bumperbot_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devam/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/devam/bumperbot_ws/build/bumperbot_msgs -- -j24 -l24
+[0.065s] [  9%] Built target bumperbot_msgs__rosidl_generator_c
+[0.065s] [ 12%] Built target bumperbot_msgs__cpp
+[0.072s] [ 12%] Built target ament_cmake_python_copy_bumperbot_msgs
+[0.079s] [ 41%] Built target bumperbot_msgs__rosidl_typesupport_c
+[0.079s] [ 41%] Built target bumperbot_msgs__rosidl_typesupport_fastrtps_cpp
+[0.079s] [ 41%] Built target bumperbot_msgs__rosidl_typesupport_cpp
+[0.080s] [ 51%] Built target bumperbot_msgs__rosidl_typesupport_introspection_c
+[0.081s] [ 61%] Built target bumperbot_msgs__rosidl_typesupport_introspection_cpp
+[0.082s] [ 70%] Built target bumperbot_msgs__rosidl_typesupport_fastrtps_c
+[0.096s] [ 70%] Built target bumperbot_msgs
+[0.113s] [ 74%] Built target bumperbot_msgs__py
+[0.133s] [ 80%] Built target bumperbot_msgs__rosidl_generator_py
+[0.151s] [ 87%] Built target bumperbot_msgs__rosidl_typesupport_c__pyext
+[0.151s] [ 93%] Built target bumperbot_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.152s] [100%] Built target bumperbot_msgs__rosidl_typesupport_introspection_c__pyext
+[0.270s] running egg_info
+[0.278s] writing bumperbot_msgs.egg-info/PKG-INFO
+[0.278s] writing dependency_links to bumperbot_msgs.egg-info/dependency_links.txt
+[0.278s] writing top-level names to bumperbot_msgs.egg-info/top_level.txt
+[0.309s] reading manifest file 'bumperbot_msgs.egg-info/SOURCES.txt'
+[0.310s] writing manifest file 'bumperbot_msgs.egg-info/SOURCES.txt'
+[0.338s] [100%] Built target ament_cmake_python_build_bumperbot_msgs_egg

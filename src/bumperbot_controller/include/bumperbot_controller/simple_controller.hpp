@@ -7,6 +7,8 @@
 #include <Eigen/Core>
 #include <sensor_msgs/msg/joint_state.hpp>
 #include <cmath>
+#include <nav_msgs/msg/odometry.hpp>
+#include <tf2/LinearMath/Quaternion.h>
 
 class SimpleController : public rclcpp::Node
 {
@@ -21,6 +23,7 @@ class SimpleController : public rclcpp::Node
         rclcpp::Subscription<geometry_msgs::msg::TwistStamped>::SharedPtr vel_sub;
         rclcpp::Publisher<std_msgs::msg::Float64MultiArray>::SharedPtr wheel_cmd_pub;
         rclcpp::Subscription<sensor_msgs::msg::JointState>::SharedPtr joint_sub;
+        rclcpp::Publisher<nav_msgs::msg::Odometry>::SharedPtr odom_pub;
 
         double wheel_radius;
         double wheel_separation;
@@ -33,6 +36,9 @@ class SimpleController : public rclcpp::Node
         double x;
         double y;
         double theta;
+
+        tf2::Quaternion q;
+        nav_msgs::msg::Odometry odom;
 };
 
 #endif

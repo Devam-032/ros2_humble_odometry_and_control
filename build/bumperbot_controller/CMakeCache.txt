@@ -275,7 +275,10 @@ SITE:STRING=devam-Crosshair-16-HX-D14VFKG
 TinyXML2_DIR:PATH=TinyXML2_DIR-NOTFOUND
 
 //Path to a library.
-_lib:FILEPATH=/opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_fastrtps_cpp.so
+_lib:FILEPATH=/opt/ros/humble/lib/libtf2_msgs__rosidl_typesupport_fastrtps_cpp.so
+
+//The directory containing a CMake configuration file for action_msgs.
+action_msgs_DIR:PATH=/opt/ros/humble/share/action_msgs/cmake
 
 //The directory containing a CMake configuration file for ament_cmake.
 ament_cmake_DIR:PATH=/opt/ros/humble/share/ament_cmake/cmake
@@ -382,6 +385,15 @@ bumperbot_controller_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 bumperbot_controller_SOURCE_DIR:STATIC=/home/devam/bumperbot_ws/src/bumperbot_controller
 
+//The directory containing a CMake configuration file for class_loader.
+class_loader_DIR:PATH=/opt/ros/humble/share/class_loader/cmake
+
+//The directory containing a CMake configuration file for composition_interfaces.
+composition_interfaces_DIR:PATH=/opt/ros/humble/share/composition_interfaces/cmake
+
+//The directory containing a CMake configuration file for console_bridge.
+console_bridge_DIR:PATH=/usr/lib/x86_64-linux-gnu/console_bridge/cmake
+
 //The directory containing a CMake configuration file for fastcdr.
 fastcdr_DIR:PATH=/opt/ros/humble/lib/cmake/fastcdr
 
@@ -406,6 +418,9 @@ libstatistics_collector_DIR:PATH=/opt/ros/humble/share/libstatistics_collector/c
 //The directory containing a CMake configuration file for libyaml_vendor.
 libyaml_vendor_DIR:PATH=/opt/ros/humble/share/libyaml_vendor/cmake
 
+//The directory containing a CMake configuration file for message_filters.
+message_filters_DIR:PATH=/opt/ros/humble/share/message_filters/cmake
+
 //The directory containing a CMake configuration file for nav_msgs.
 nav_msgs_DIR:PATH=/opt/ros/humble/share/nav_msgs/cmake
 
@@ -417,6 +432,9 @@ pkgcfg_lib__OPENSSL_ssl:FILEPATH=/usr/lib/x86_64-linux-gnu/libssl.so
 
 //The directory containing a CMake configuration file for rcl.
 rcl_DIR:PATH=/opt/ros/humble/share/rcl/cmake
+
+//The directory containing a CMake configuration file for rcl_action.
+rcl_action_DIR:PATH=/opt/ros/humble/share/rcl_action/cmake
 
 //The directory containing a CMake configuration file for rcl_interfaces.
 rcl_interfaces_DIR:PATH=/opt/ros/humble/share/rcl_interfaces/cmake
@@ -432,6 +450,12 @@ rcl_yaml_param_parser_DIR:PATH=/opt/ros/humble/share/rcl_yaml_param_parser/cmake
 
 //The directory containing a CMake configuration file for rclcpp.
 rclcpp_DIR:PATH=/opt/ros/humble/share/rclcpp/cmake
+
+//The directory containing a CMake configuration file for rclcpp_action.
+rclcpp_action_DIR:PATH=/opt/ros/humble/share/rclcpp_action/cmake
+
+//The directory containing a CMake configuration file for rclcpp_components.
+rclcpp_components_DIR:PATH=/opt/ros/humble/share/rclcpp_components/cmake
 
 //The directory containing a CMake configuration file for rclpy.
 rclpy_DIR:PATH=/opt/ros/humble/share/rclpy/cmake
@@ -520,11 +544,23 @@ statistics_msgs_DIR:PATH=/opt/ros/humble/share/statistics_msgs/cmake
 //The directory containing a CMake configuration file for std_msgs.
 std_msgs_DIR:PATH=/opt/ros/humble/share/std_msgs/cmake
 
+//The directory containing a CMake configuration file for tf2.
+tf2_DIR:PATH=/opt/ros/humble/share/tf2/cmake
+
+//The directory containing a CMake configuration file for tf2_msgs.
+tf2_msgs_DIR:PATH=/opt/ros/humble/share/tf2_msgs/cmake
+
+//The directory containing a CMake configuration file for tf2_ros.
+tf2_ros_DIR:PATH=/opt/ros/humble/share/tf2_ros/cmake
+
 //The directory containing a CMake configuration file for tf_transformations.
 tf_transformations_DIR:PATH=tf_transformations_DIR-NOTFOUND
 
 //The directory containing a CMake configuration file for tracetools.
 tracetools_DIR:PATH=/opt/ros/humble/share/tracetools/cmake
+
+//The directory containing a CMake configuration file for unique_identifier_msgs.
+unique_identifier_msgs_DIR:PATH=/opt/ros/humble/share/unique_identifier_msgs/cmake
 
 //Path to a program.
 xmllint_BIN:FILEPATH=/usr/bin/xmllint

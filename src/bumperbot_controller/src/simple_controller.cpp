@@ -27,6 +27,11 @@ SimpleController::SimpleController(const std::string &name) : Node(name),left_pr
 
     prev_time = get_clock()->now();
 
+    odom_pub = create_publisher<nav_msgs::msg::Odometry>("/bumperbot_odom",10);
+
+    odom.header.frame_id = "odom";
+    odom.child_frame_id = "base_footprint";
+
 }
 
 void SimpleController::velCb(const geometry_msgs::msg::TwistStamped &msg){
@@ -65,6 +70,21 @@ void SimpleController::jointCb(const sensor_msgs::msg::JointState &msg){
     y += linear*dt.seconds()*sin(theta);
 
     RCLCPP_INFO_STREAM(get_logger(),"x:"<<x<<"y:"<<y<<"theta:"<<theta);
+
+    odom.header.stamp = this->get_clock()->now();
+    odom.pose.pose.position.x = x;
+    odom.pose.pose.position.y = y;
+    odom.pose.pose.position.z = 0.0;
+    q.setRPY(0.0,0.0,theta);
+    odom.pose.pose.orientation.x = q.x();
+    odom.pose.pose.orientation.y = q.y();
+    odom.pose.pose.orientation.z = q.z();
+    odom.pose.pose.orientation.w = q.w();
+    odom.twist.twist.linear.x = linear;
+    odom.twist.twist.angular.z = angular;
+
+    odom_pub->publish(odom);
+
 }
 
 int main(int argc, char* argv[]){

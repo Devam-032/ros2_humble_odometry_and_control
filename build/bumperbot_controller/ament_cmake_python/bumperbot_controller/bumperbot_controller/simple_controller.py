@@ -57,6 +57,8 @@ class SimpleController(Node):
         self.odom_msg.pose.pose.position.x = 0.0
         self.odom_msg.pose.pose.position.y = 0.0
         self.odom_msg.pose.pose.position.z = 0.0
+        
+
 
     def velCb(self,msg):
         robot_speed = np.array([
@@ -111,6 +113,7 @@ class SimpleController(Node):
 
         self.get_logger().info(f"The message is being published on the bumperbot_odom topic.")
 
+        self.odom_pub.publish(self.odom_msg)
         
 
 def main():

@@ -1,0 +1,49 @@
+[0.014s] Invoking command in '/home/devam/bumperbot_ws/build/bumperbot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devam/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/devam/bumperbot_ws/build/bumperbot_controller -- -j24 -l24
+[0.029s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.097s] -- Found rclpy: 3.3.15 (/opt/ros/humble/share/rclpy/cmake)
+[0.097s] -- Found std_msgs: 4.2.4 (/opt/ros/humble/share/std_msgs/cmake)
+[0.110s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.111s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.114s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.119s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.125s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.136s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.143s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.156s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.156s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.224s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.246s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.255s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.359s] -- Found tf2: 0.25.9 (/opt/ros/humble/share/tf2/cmake)
+[0.367s] -- Found tf2_ros: 0.25.9 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.471s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.512s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.512s] -- Configured cppcheck include dirs: /home/devam/bumperbot_ws/src/bumperbot_controller/include
+[0.512s] -- Configured cppcheck exclude dirs and/or files: 
+[0.512s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.512s] -- Added test 'lint_cmake' to check CMake code style
+[0.512s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.513s] -- Added test 'uncrustify' to check C / C++ code style
+[0.513s] -- Configured uncrustify additional arguments: 
+[0.513s] -- Added test 'xmllint' to check XML markup files
+[0.513s] -- Configuring done
+[0.520s] -- Generating done
+[0.523s] -- Build files have been written to: /home/devam/bumperbot_ws/build/bumperbot_controller
+[0.541s] [35m[1mConsolidate compiler generated dependencies of target simple_controller[0m
+[0.553s] [  0%] Built target ament_cmake_python_copy_bumperbot_controller
+[0.554s] [ 50%] [32mBuilding CXX object CMakeFiles/simple_controller.dir/src/simple_controller.cpp.o[0m
+[0.742s] running egg_info
+[0.750s] writing bumperbot_controller.egg-info/PKG-INFO
+[0.750s] writing dependency_links to bumperbot_controller.egg-info/dependency_links.txt
+[0.750s] writing top-level names to bumperbot_controller.egg-info/top_level.txt
+[0.777s] reading manifest file 'bumperbot_controller.egg-info/SOURCES.txt'
+[0.778s] writing manifest file 'bumperbot_controller.egg-info/SOURCES.txt'
+[0.826s] [ 50%] Built target ament_cmake_python_build_bumperbot_controller_egg
+[2.321s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/src/simple_controller.cpp:[m[K In member function ‘[01m[Kvoid SimpleController::jointCb(const JointState&)[m[K’:
+[2.321s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/src/simple_controller.cpp:74:43:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Krclcpp::Time[m[K’
+[2.321s]    74 |     odom.header.stamp = get_clock()->now()[01;31m[K->[m[Kto_msg();
+[2.322s]       |                                           [01;31m[K^~[m[K
+[4.053s] gmake[2]: *** [CMakeFiles/simple_controller.dir/build.make:76: CMakeFiles/simple_controller.dir/src/simple_controller.cpp.o] Error 1
+[4.054s] gmake[1]: *** [CMakeFiles/Makefile2:192: CMakeFiles/simple_controller.dir/all] Error 2
+[4.054s] gmake: *** [Makefile:146: all] Error 2
+[4.056s] Invoked command in '/home/devam/bumperbot_ws/build/bumperbot_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devam/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/devam/bumperbot_ws/build/bumperbot_controller -- -j24 -l24
