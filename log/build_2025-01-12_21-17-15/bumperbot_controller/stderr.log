@@ -1,0 +1,44 @@
+[01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/src/simple_controller.cpp:[m[K In constructor ‘[01m[KSimpleController::SimpleController(const string&)[m[K’:
+[01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/src/simple_controller.cpp:6:127:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Ktf2_ros::TransformBroadcaster::TransformBroadcaster()[m[K’
+    6 | SimpleController::SimpleController(const std::string &name) : Node(name),left_prev_pose(0.0),right_prev_pose(0.0),x(0.0),y(0.0[01;31m[K)[m[K
+      |                                                                                                                               [01;31m[K^[m[K
+In file included from [01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/include/bumperbot_controller/simple_controller.hpp:12[m[K,
+                 from [01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/src/simple_controller.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/transform_broadcaster.h:58:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class NodeT, class AllocatorT> tf2_ros::TransformBroadcaster::TransformBroadcaster(NodeT&&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+   58 |   [01;36m[KTransformBroadcaster[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/transform_broadcaster.h:58:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/src/simple_controller.cpp:6:127:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+    6 | SimpleController::SimpleController(const std::string &name) : Node(name),left_prev_pose(0.0),right_prev_pose(0.0),x(0.0),y(0.0[01;36m[K)[m[K
+      |                                                                                                                               [01;36m[K^[m[K
+In file included from [01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/include/bumperbot_controller/simple_controller.hpp:12[m[K,
+                 from [01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/src/simple_controller.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/transform_broadcaster.h:53:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktf2_ros::TransformBroadcaster::TransformBroadcaster(const tf2_ros::TransformBroadcaster&)[m[K’
+   53 | class [01;36m[KTransformBroadcaster[m[K
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/transform_broadcaster.h:53:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/transform_broadcaster.h:53:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktf2_ros::TransformBroadcaster::TransformBroadcaster(tf2_ros::TransformBroadcaster&&)[m[K’
+[01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/transform_broadcaster.h:53:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/src/simple_controller.cpp:37:35:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Ktf2_ros::TransformBroadcaster::TransformBroadcaster()[m[K’
+   37 |     tf2_ros::TransformBroadcaster [01;31m[Kodom_br[m[K;
+      |                                   [01;31m[K^~~~~~~[m[K
+In file included from [01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/include/bumperbot_controller/simple_controller.hpp:12[m[K,
+                 from [01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/src/simple_controller.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/transform_broadcaster.h:58:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class NodeT, class AllocatorT> tf2_ros::TransformBroadcaster::TransformBroadcaster(NodeT&&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+   58 |   [01;36m[KTransformBroadcaster[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/transform_broadcaster.h:58:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/src/simple_controller.cpp:37:35:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+   37 |     tf2_ros::TransformBroadcaster [01;36m[Kodom_br[m[K;
+      |                                   [01;36m[K^~~~~~~[m[K
+In file included from [01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/include/bumperbot_controller/simple_controller.hpp:12[m[K,
+                 from [01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/src/simple_controller.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/transform_broadcaster.h:53:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktf2_ros::TransformBroadcaster::TransformBroadcaster(const tf2_ros::TransformBroadcaster&)[m[K’
+   53 | class [01;36m[KTransformBroadcaster[m[K
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/transform_broadcaster.h:53:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/transform_broadcaster.h:53:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktf2_ros::TransformBroadcaster::TransformBroadcaster(tf2_ros::TransformBroadcaster&&)[m[K’
+[01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/transform_broadcaster.h:53:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+gmake[2]: *** [CMakeFiles/simple_controller.dir/build.make:76: CMakeFiles/simple_controller.dir/src/simple_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:192: CMakeFiles/simple_controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

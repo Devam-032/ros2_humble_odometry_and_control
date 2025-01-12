@@ -1,0 +1,41 @@
+[0.015s] Invoking command in '/home/devam/bumperbot_ws/build/bumperbot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devam/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/devam/bumperbot_ws/build/bumperbot_controller -- -j24 -l24
+[0.047s] [35m[1mConsolidate compiler generated dependencies of target simple_controller[0m
+[0.053s] [  0%] Built target ament_cmake_python_copy_bumperbot_controller
+[0.060s] [ 50%] [32mBuilding CXX object CMakeFiles/simple_controller.dir/src/simple_controller.cpp.o[0m
+[0.247s] running egg_info
+[0.255s] writing bumperbot_controller.egg-info/PKG-INFO
+[0.255s] writing dependency_links to bumperbot_controller.egg-info/dependency_links.txt
+[0.255s] writing top-level names to bumperbot_controller.egg-info/top_level.txt
+[0.286s] reading manifest file 'bumperbot_controller.egg-info/SOURCES.txt'
+[0.286s] writing manifest file 'bumperbot_controller.egg-info/SOURCES.txt'
+[0.316s] [ 50%] Built target ament_cmake_python_build_bumperbot_controller_egg
+[1.664s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/src/simple_controller.cpp:[m[K In constructor ‘[01m[KSimpleController::SimpleController(const string&)[m[K’:
+[1.664s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/src/simple_controller.cpp:37:35:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Ktf2_ros::TransformBroadcaster::TransformBroadcaster()[m[K’
+[1.664s]    37 |     tf2_ros::TransformBroadcaster [01;31m[Kodom_br[m[K;
+[1.664s]       |                                   [01;31m[K^~~~~~~[m[K
+[1.664s] In file included from [01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/include/bumperbot_controller/simple_controller.hpp:12[m[K,
+[1.664s]                  from [01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/src/simple_controller.cpp:1[m[K:
+[1.665s] [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/transform_broadcaster.h:58:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class NodeT, class AllocatorT> tf2_ros::TransformBroadcaster::TransformBroadcaster(NodeT&&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+[1.665s]    58 |   [01;36m[KTransformBroadcaster[m[K(
+[1.665s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[1.665s] [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/transform_broadcaster.h:58:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.665s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/src/simple_controller.cpp:37:35:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+[1.665s]    37 |     tf2_ros::TransformBroadcaster [01;36m[Kodom_br[m[K;
+[1.665s]       |                                   [01;36m[K^~~~~~~[m[K
+[1.665s] In file included from [01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/include/bumperbot_controller/simple_controller.hpp:12[m[K,
+[1.665s]                  from [01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/src/simple_controller.cpp:1[m[K:
+[1.665s] [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/transform_broadcaster.h:53:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktf2_ros::TransformBroadcaster::TransformBroadcaster(const tf2_ros::TransformBroadcaster&)[m[K’
+[1.665s]    53 | class [01;36m[KTransformBroadcaster[m[K
+[1.665s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[1.665s] [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/transform_broadcaster.h:53:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[1.665s] [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/transform_broadcaster.h:53:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktf2_ros::TransformBroadcaster::TransformBroadcaster(tf2_ros::TransformBroadcaster&&)[m[K’
+[1.665s] [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/transform_broadcaster.h:53:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[1.688s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/src/simple_controller.cpp:[m[K In member function ‘[01m[Kvoid SimpleController::jointCb(const JointState&)[m[K’:
+[1.688s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/src/simple_controller.cpp:101:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kodom_br[m[K’ was not declared in this scope; did you mean ‘[01m[Kodom_tf[m[K’?
+[1.688s]   101 |     [01;31m[Kodom_br[m[K.sendTransform(odom_tf);
+[1.688s]       |     [01;31m[K^~~~~~~[m[K
+[1.688s]       |     [32m[Kodom_tf[m[K
+[3.625s] gmake[2]: *** [CMakeFiles/simple_controller.dir/build.make:76: CMakeFiles/simple_controller.dir/src/simple_controller.cpp.o] Error 1
+[3.625s] gmake[1]: *** [CMakeFiles/Makefile2:192: CMakeFiles/simple_controller.dir/all] Error 2
+[3.626s] gmake: *** [Makefile:146: all] Error 2
+[3.627s] Invoked command in '/home/devam/bumperbot_ws/build/bumperbot_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devam/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/devam/bumperbot_ws/build/bumperbot_controller -- -j24 -l24

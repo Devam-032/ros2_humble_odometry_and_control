@@ -1,0 +1,133 @@
+[0.015s] Invoking command in '/home/devam/bumperbot_ws/build/bumperbot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devam/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/devam/bumperbot_ws/build/bumperbot_controller -- -j24 -l24
+[0.044s] [35m[1mConsolidate compiler generated dependencies of target simple_controller[0m
+[0.050s] [  0%] Built target ament_cmake_python_copy_bumperbot_controller
+[0.057s] [ 50%] [32mBuilding CXX object CMakeFiles/simple_controller.dir/src/simple_controller.cpp.o[0m
+[0.252s] running egg_info
+[0.260s] writing bumperbot_controller.egg-info/PKG-INFO
+[0.260s] writing dependency_links to bumperbot_controller.egg-info/dependency_links.txt
+[0.260s] writing top-level names to bumperbot_controller.egg-info/top_level.txt
+[0.292s] reading manifest file 'bumperbot_controller.egg-info/SOURCES.txt'
+[0.293s] writing manifest file 'bumperbot_controller.egg-info/SOURCES.txt'
+[0.323s] [ 50%] Built target ament_cmake_python_build_bumperbot_controller_egg
+[1.651s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/src/simple_controller.cpp:[m[K In constructor ‘[01m[KSimpleController::SimpleController(const string&)[m[K’:
+[1.651s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/src/simple_controller.cpp:8:44:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ before ‘[01m[K;[m[K’ token
+[1.651s]     8 |     declare_parameter("wheel_radius",0.033)[01;31m[K;[m[K
+[1.652s]       |                                            [01;31m[K^[m[K
+[1.652s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/src/simple_controller.cpp:7:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[1.652s]     7 | [01;36m[K{[m[K
+[1.652s]       | [01;36m[K^[m[K
+[1.654s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/src/simple_controller.cpp:8:44:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K;[m[K’ token
+[1.654s]     8 |     declare_parameter("wheel_radius",0.033)[01;31m[K;[m[K
+[1.654s]       |                                            [01;31m[K^[m[K
+[1.654s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/src/simple_controller.cpp:[m[K At global scope:
+[1.654s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/src/simple_controller.cpp:9:22:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion before ‘[01m[K([m[K’ token
+[1.654s]     9 |     declare_parameter[01;31m[K([m[K"wheel_separation",0.17);
+[1.654s]       |                      [01;31m[K^[m[K
+[1.655s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/src/simple_controller.cpp:11:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kwheel_radius[m[K’ does not name a type
+[1.655s]    11 |     [01;31m[Kwheel_radius[m[K = get_parameter("wheel_radius").as_double();
+[1.655s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[1.657s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/src/simple_controller.cpp:12:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kwheel_separation[m[K’ does not name a type
+[1.657s]    12 |     [01;31m[Kwheel_separation[m[K = get_parameter("wheel_separation").as_double();
+[1.657s]       |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[1.657s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[1.657s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[1.657s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[1.657s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[1.657s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[1.657s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[1.657s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[1.658s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[1.658s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[1.658s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.658s]                  from [01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/include/bumperbot_controller/simple_controller.hpp:4[m[K,
+[1.658s]                  from [01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/src/simple_controller.cpp:1[m[K:
+[1.658s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/src/simple_controller.cpp:14:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kdo[m[K’
+[1.658s]    14 |     [01;31m[KRCLCPP_INFO_STREAM[m[K(get_logger(),"Using wheel radius"<<wheel_radius);
+[1.658s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[1.658s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/src/simple_controller.cpp:14:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kwhile[m[K’
+[1.658s]    14 |     [01;31m[KRCLCPP_INFO_STREAM[m[K(get_logger(),"Using wheel radius"<<wheel_radius);
+[1.658s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[1.658s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/src/simple_controller.cpp:15:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kdo[m[K’
+[1.658s]    15 |     [01;31m[KRCLCPP_INFO_STREAM[m[K(get_logger(),"Using wheel separation"<<wheel_separation);
+[1.658s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[1.658s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/src/simple_controller.cpp:15:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kwhile[m[K’
+[1.658s]    15 |     [01;31m[KRCLCPP_INFO_STREAM[m[K(get_logger(),"Using wheel separation"<<wheel_separation);
+[1.658s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[1.659s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/src/simple_controller.cpp:17:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kwheel_cmd_pub[m[K’ does not name a type
+[1.659s]    17 |     [01;31m[Kwheel_cmd_pub[m[K = create_publisher<std_msgs::msg::Float64MultiArray>("/simple_velocity_controller/commands",10);
+[1.659s]       |     [01;31m[K^~~~~~~~~~~~~[m[K
+[1.660s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/src/simple_controller.cpp:18:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kvel_sub[m[K’ does not name a type
+[1.660s]    18 |     [01;31m[Kvel_sub[m[K = create_subscription<geometry_msgs::msg::TwistStamped>("/bumperbot_controller/cmd_vel",10,
+[1.660s]       |     [01;31m[K^~~~~~~[m[K
+[1.661s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/src/simple_controller.cpp:21:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kspeed_conversion[m[K’ does not name a type
+[1.661s]    21 |     [01;31m[Kspeed_conversion[m[K << wheel_radius/2,wheel_radius/2,wheel_radius/wheel_separation,-wheel_radius/wheel_separation;
+[1.661s]       |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[1.661s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[1.661s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[1.661s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[1.661s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[1.661s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[1.661s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[1.661s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[1.661s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[1.661s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[1.661s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.661s]                  from [01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/include/bumperbot_controller/simple_controller.hpp:4[m[K,
+[1.661s]                  from [01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/src/simple_controller.cpp:1[m[K:
+[1.661s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/src/simple_controller.cpp:23:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kdo[m[K’
+[1.661s]    23 |     [01;31m[KRCLCPP_INFO_STREAM[m[K(get_logger(),"The conversion matrix is \n " << speed_conversion);
+[1.661s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[1.662s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/src/simple_controller.cpp:23:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kwhile[m[K’
+[1.662s]    23 |     [01;31m[KRCLCPP_INFO_STREAM[m[K(get_logger(),"The conversion matrix is \n " << speed_conversion);
+[1.662s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[1.662s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/src/simple_controller.cpp:25:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint_sub[m[K’ does not name a type
+[1.662s]    25 |     [01;31m[Kjoint_sub[m[K = create_subscription<sensor_msgs::msg::JointState>("/joint_states",10,
+[1.662s]       |     [01;31m[K^~~~~~~~~[m[K
+[1.663s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/src/simple_controller.cpp:28:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kprev_time[m[K’ does not name a type
+[1.663s]    28 |     [01;31m[Kprev_time[m[K = get_clock()->now();
+[1.663s]       |     [01;31m[K^~~~~~~~~[m[K
+[1.664s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/src/simple_controller.cpp:30:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kodom_pub[m[K’ does not name a type
+[1.664s]    30 |     [01;31m[Kodom_pub[m[K = create_publisher<nav_msgs::msg::Odometry>("/bumperbot_odom",10);
+[1.664s]       |     [01;31m[K^~~~~~~~[m[K
+[1.664s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/src/simple_controller.cpp:32:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kodom[m[K’ does not name a type
+[1.664s]    32 |     [01;31m[Kodom[m[K.header.frame_id = "odom";
+[1.664s]       |     [01;31m[K^~~~[m[K
+[1.665s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/src/simple_controller.cpp:33:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kodom[m[K’ does not name a type
+[1.665s]    33 |     [01;31m[Kodom[m[K.child_frame_id = "base_footprint";
+[1.665s]       |     [01;31m[K^~~~[m[K
+[1.666s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/src/simple_controller.cpp:35:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kodom_tf[m[K’ does not name a type
+[1.666s]    35 |     [01;31m[Kodom_tf[m[K.header.frame_id = "odom";
+[1.666s]       |     [01;31m[K^~~~~~~[m[K
+[1.666s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/src/simple_controller.cpp:36:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kodom_tf[m[K’ does not name a type
+[1.666s]    36 |     [01;31m[Kodom_tf[m[K.child_frame_id = "base_footprint";
+[1.666s]       |     [01;31m[K^~~~~~~[m[K
+[1.666s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/src/simple_controller.cpp:38:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+[1.666s]    38 | [01;31m[K}[m[K
+[1.666s]       | [01;31m[K^[m[K
+[1.906s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/create_publisher.hpp:22[m[K,
+[1.906s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:41[m[K,
+[1.906s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1321[m[K,
+[1.906s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[1.906s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[1.906s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.906s]                  from [01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/include/bumperbot_controller/simple_controller.hpp:4[m[K,
+[1.906s]                  from [01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/src/simple_controller.cpp:1[m[K:
+[1.906s] /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_topics_interface.hpp: In instantiation of ‘[01m[Kstd::shared_ptr<rclcpp::node_interfaces::NodeTopicsInterface> rclcpp::node_interfaces::get_node_topics_interface(NodeType&&) [with NodeType = double&; typename std::enable_if<(! rcpputils::is_pointer<T>::value), int>::type <anonymous> = 0][m[K’:
+[1.906s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/create_publisher.hpp:56:82:[m[K   required from ‘[01m[Kstd::shared_ptr<PublisherT> rclcpp::detail::create_publisher(NodeParametersT&, NodeTopicsT&, const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&) [with MessageT = tf2_msgs::msg::TFMessage_<std::allocator<void> >; AllocatorT = std::allocator<void>; PublisherT = rclcpp::Publisher<tf2_msgs::msg::TFMessage_<std::allocator<void> > >; NodeParametersT = double; NodeTopicsT = double; std::string = std::__cxx11::basic_string<char>][m[K’
+[1.906s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/create_publisher.hpp:103:68:[m[K   required from ‘[01m[Kstd::shared_ptr<PublisherT> rclcpp::create_publisher(NodeT&&, const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&) [with MessageT = tf2_msgs::msg::TFMessage_<std::allocator<void> >; AllocatorT = std::allocator<void>; PublisherT = rclcpp::Publisher<tf2_msgs::msg::TFMessage_<std::allocator<void> > >; NodeT = double&; std::string = std::__cxx11::basic_string<char>][m[K’
+[1.906s] [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/transform_broadcaster.h:71:68:[m[K   required from ‘[01m[Ktf2_ros::TransformBroadcaster::TransformBroadcaster(NodeT&&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&) [with NodeT = double; AllocatorT = std::allocator<void>][m[K’
+[1.906s] [01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/src/simple_controller.cpp:6:129:[m[K   required from here
+[1.906s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_topics_interface.hpp:90:56:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kget_node_topics_interface_from_pointer(double*)[m[K’
+[1.906s]    90 |   return [01;31m[Kdetail::get_node_topics_interface_from_pointer(&node)[m[K;
+[1.906s]       |          [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[1.906s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_topics_interface.hpp:53:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class NodeType, typename std::enable_if<rclcpp::node_interfaces::has_node_topics_interface<typename rcpputils::remove_pointer<T>::type>::value, int>::type <anonymous> > std::shared_ptr<rclcpp::node_interfaces::NodeTopicsInterface> rclcpp::node_interfaces::detail::get_node_topics_interface_from_pointer(NodeType)[m[K’
+[1.906s]    53 | [01;36m[Kget_node_topics_interface_from_pointer[m[K(NodeType node_pointer)
+[1.906s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.906s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_topics_interface.hpp:53:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.906s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_topics_interface.hpp:50:26:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, int>[m[K’
+[1.906s]    50 |   >::value, int>::type = [01;31m[K0[m[K
+[1.906s]       |                          [01;31m[K^[m[K
+[2.207s] gmake[2]: *** [CMakeFiles/simple_controller.dir/build.make:76: CMakeFiles/simple_controller.dir/src/simple_controller.cpp.o] Error 1
+[2.207s] gmake[1]: *** [CMakeFiles/Makefile2:192: CMakeFiles/simple_controller.dir/all] Error 2
+[2.207s] gmake: *** [Makefile:146: all] Error 2
+[2.209s] Invoked command in '/home/devam/bumperbot_ws/build/bumperbot_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devam/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/devam/bumperbot_ws/build/bumperbot_controller -- -j24 -l24

@@ -3,7 +3,8 @@
 
 using std::placeholders::_1;
 
-SimpleController::SimpleController(const std::string &name) : Node(name),left_prev_pose(0.0),right_prev_pose(0.0),x(0.0),y(0.0)
+SimpleController::SimpleController(const std::string &name) : 
+Node(name),left_prev_pose(0.0),right_prev_pose(0.0),x(0.0),y(0.0),odom_br(this)
 {
     declare_parameter("wheel_radius",0.033);
     declare_parameter("wheel_separation",0.17);
@@ -31,6 +32,10 @@ SimpleController::SimpleController(const std::string &name) : Node(name),left_pr
 
     odom.header.frame_id = "odom";
     odom.child_frame_id = "base_footprint";
+
+    odom_tf.header.frame_id = "odom";
+    odom_tf.child_frame_id = "base_footprint";
+    
 
 }
 
@@ -84,6 +89,17 @@ void SimpleController::jointCb(const sensor_msgs::msg::JointState &msg){
     odom.twist.twist.angular.z = angular;
 
     odom_pub->publish(odom);
+
+    odom_tf.transform.translation.x = x;
+    odom_tf.transform.translation.y = y;
+    odom_tf.transform.translation.z = 0.0;
+    odom_tf.transform.rotation.x = q.x();
+    odom_tf.transform.rotation.y = q.y();
+    odom_tf.transform.rotation.z = q.z();
+    odom_tf.transform.rotation.w = q.w();
+    odom_tf.header.stamp = this->get_clock()->now();
+
+    odom_br.sendTransform(odom_tf);
 
 }
 
