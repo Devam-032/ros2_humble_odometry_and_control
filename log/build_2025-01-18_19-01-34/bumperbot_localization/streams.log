@@ -1,0 +1,102 @@
+[0.013s] Invoking command in '/home/devam/bumperbot_ws/build/bumperbot_localization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devam/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake /home/devam/bumperbot_ws/src/bumperbot_localization -DCMAKE_INSTALL_PREFIX=/home/devam/bumperbot_ws/install/bumperbot_localization
+[0.071s] -- The C compiler identification is GNU 11.4.0
+[0.113s] -- The CXX compiler identification is GNU 11.4.0
+[0.119s] -- Detecting C compiler ABI info
+[0.167s] -- Detecting C compiler ABI info - done
+[0.171s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.171s] -- Detecting C compile features
+[0.171s] -- Detecting C compile features - done
+[0.173s] -- Detecting CXX compiler ABI info
+[0.226s] -- Detecting CXX compiler ABI info - done
+[0.231s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.231s] -- Detecting CXX compile features
+[0.231s] -- Detecting CXX compile features - done
+[0.233s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.614s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.667s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.692s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.695s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.700s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.707s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.716s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.741s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.743s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.804s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.825s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.858s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.867s] -- Looking for pthread.h
+[0.919s] -- Looking for pthread.h - found
+[0.919s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.971s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.972s] -- Found Threads: TRUE  
+[1.001s] -- Found rclpy: 3.3.15 (/opt/ros/humble/share/rclpy/cmake)
+[1.002s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.018s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.114s] -- Configuring done
+[1.120s] -- Generating done
+[1.123s] -- Build files have been written to: /home/devam/bumperbot_ws/build/bumperbot_localization
+[1.129s] Invoked command in '/home/devam/bumperbot_ws/build/bumperbot_localization' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devam/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake /home/devam/bumperbot_ws/src/bumperbot_localization -DCMAKE_INSTALL_PREFIX=/home/devam/bumperbot_ws/install/bumperbot_localization
+[1.130s] Invoking command in '/home/devam/bumperbot_ws/build/bumperbot_localization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devam/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/devam/bumperbot_ws/build/bumperbot_localization -- -j24 -l24
+[1.171s] [ 25%] [32mBuilding CXX object CMakeFiles/imu_republisher.dir/src/imu_republisher.cpp.o[0m
+[1.172s] [ 50%] [32mBuilding CXX object CMakeFiles/kalman_filter.dir/src/kalman_filter.cpp.o[0m
+[1.178s] [ 50%] Built target ament_cmake_python_copy_bumperbot_localization
+[1.374s] running egg_info
+[1.374s] creating bumperbot_localization.egg-info
+[1.381s] writing bumperbot_localization.egg-info/PKG-INFO
+[1.382s] writing dependency_links to bumperbot_localization.egg-info/dependency_links.txt
+[1.382s] writing top-level names to bumperbot_localization.egg-info/top_level.txt
+[1.382s] writing manifest file 'bumperbot_localization.egg-info/SOURCES.txt'
+[1.409s] reading manifest file 'bumperbot_localization.egg-info/SOURCES.txt'
+[1.409s] writing manifest file 'bumperbot_localization.egg-info/SOURCES.txt'
+[1.431s] [ 50%] Built target ament_cmake_python_build_bumperbot_localization_egg
+[5.058s] [ 75%] [32m[1mLinking CXX executable imu_republisher[0m
+[5.246s] [ 75%] Built target imu_republisher
+[6.064s] [100%] [32m[1mLinking CXX executable kalman_filter[0m
+[6.310s] [100%] Built target kalman_filter
+[6.317s] Invoked command in '/home/devam/bumperbot_ws/build/bumperbot_localization' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devam/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/devam/bumperbot_ws/build/bumperbot_localization -- -j24 -l24
+[6.318s] Invoking command in '/home/devam/bumperbot_ws/build/bumperbot_localization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devam/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --install /home/devam/bumperbot_ws/build/bumperbot_localization
+[6.324s] -- Install configuration: ""
+[6.324s] -- Installing: /home/devam/bumperbot_ws/install/bumperbot_localization/share/bumperbot_localization/environment/pythonpath.sh
+[6.324s] -- Installing: /home/devam/bumperbot_ws/install/bumperbot_localization/share/bumperbot_localization/environment/pythonpath.dsv
+[6.324s] -- Installing: /home/devam/bumperbot_ws/install/bumperbot_localization/local/lib/python3.10/dist-packages/bumperbot_localization-0.0.0-py3.10.egg-info
+[6.324s] -- Installing: /home/devam/bumperbot_ws/install/bumperbot_localization/local/lib/python3.10/dist-packages/bumperbot_localization-0.0.0-py3.10.egg-info/top_level.txt
+[6.324s] -- Installing: /home/devam/bumperbot_ws/install/bumperbot_localization/local/lib/python3.10/dist-packages/bumperbot_localization-0.0.0-py3.10.egg-info/PKG-INFO
+[6.324s] -- Installing: /home/devam/bumperbot_ws/install/bumperbot_localization/local/lib/python3.10/dist-packages/bumperbot_localization-0.0.0-py3.10.egg-info/SOURCES.txt
+[6.324s] -- Installing: /home/devam/bumperbot_ws/install/bumperbot_localization/local/lib/python3.10/dist-packages/bumperbot_localization-0.0.0-py3.10.egg-info/dependency_links.txt
+[6.324s] -- Installing: /home/devam/bumperbot_ws/install/bumperbot_localization/local/lib/python3.10/dist-packages/bumperbot_localization
+[6.324s] -- Installing: /home/devam/bumperbot_ws/install/bumperbot_localization/local/lib/python3.10/dist-packages/bumperbot_localization/kalman_filter.py
+[6.324s] -- Installing: /home/devam/bumperbot_ws/install/bumperbot_localization/local/lib/python3.10/dist-packages/bumperbot_localization/imu_republisher.py
+[6.324s] -- Installing: /home/devam/bumperbot_ws/install/bumperbot_localization/local/lib/python3.10/dist-packages/bumperbot_localization/__init__.py
+[6.343s] Listing '/home/devam/bumperbot_ws/install/bumperbot_localization/local/lib/python3.10/dist-packages/bumperbot_localization'...
+[6.343s] Compiling '/home/devam/bumperbot_ws/install/bumperbot_localization/local/lib/python3.10/dist-packages/bumperbot_localization/__init__.py'...
+[6.343s] Compiling '/home/devam/bumperbot_ws/install/bumperbot_localization/local/lib/python3.10/dist-packages/bumperbot_localization/imu_republisher.py'...
+[6.343s] Compiling '/home/devam/bumperbot_ws/install/bumperbot_localization/local/lib/python3.10/dist-packages/bumperbot_localization/kalman_filter.py'...
+[6.345s] -- Installing: /home/devam/bumperbot_ws/install/bumperbot_localization/include/include
+[6.345s] -- Installing: /home/devam/bumperbot_ws/install/bumperbot_localization/include/include/bumperbot_localization
+[6.346s] -- Installing: /home/devam/bumperbot_ws/install/bumperbot_localization/include/include/bumperbot_localization/kalman_filter.hpp
+[6.346s] -- Installing: /home/devam/bumperbot_ws/install/bumperbot_localization/lib/bumperbot_localization/kalman_filter
+[6.348s] -- Set runtime path of "/home/devam/bumperbot_ws/install/bumperbot_localization/lib/bumperbot_localization/kalman_filter" to ""
+[6.348s] -- Installing: /home/devam/bumperbot_ws/install/bumperbot_localization/lib/bumperbot_localization/imu_republisher
+[6.349s] -- Set runtime path of "/home/devam/bumperbot_ws/install/bumperbot_localization/lib/bumperbot_localization/imu_republisher" to ""
+[6.349s] -- Installing: /home/devam/bumperbot_ws/install/bumperbot_localization/share/bumperbot_localization/launch
+[6.349s] -- Installing: /home/devam/bumperbot_ws/install/bumperbot_localization/share/bumperbot_localization/launch/local_localization.launch.py
+[6.349s] -- Installing: /home/devam/bumperbot_ws/install/bumperbot_localization/share/bumperbot_localization/config
+[6.349s] -- Installing: /home/devam/bumperbot_ws/install/bumperbot_localization/share/bumperbot_localization/config/ekf.yaml
+[6.349s] -- Installing: /home/devam/bumperbot_ws/install/bumperbot_localization/lib/bumperbot_localization/kalman_filter.py
+[6.349s] -- Installing: /home/devam/bumperbot_ws/install/bumperbot_localization/lib/bumperbot_localization/imu_republisher.py
+[6.349s] -- Installing: /home/devam/bumperbot_ws/install/bumperbot_localization/share/ament_index/resource_index/package_run_dependencies/bumperbot_localization
+[6.349s] -- Installing: /home/devam/bumperbot_ws/install/bumperbot_localization/share/ament_index/resource_index/parent_prefix_path/bumperbot_localization
+[6.349s] -- Installing: /home/devam/bumperbot_ws/install/bumperbot_localization/share/bumperbot_localization/environment/ament_prefix_path.sh
+[6.350s] -- Installing: /home/devam/bumperbot_ws/install/bumperbot_localization/share/bumperbot_localization/environment/ament_prefix_path.dsv
+[6.350s] -- Installing: /home/devam/bumperbot_ws/install/bumperbot_localization/share/bumperbot_localization/environment/path.sh
+[6.350s] -- Installing: /home/devam/bumperbot_ws/install/bumperbot_localization/share/bumperbot_localization/environment/path.dsv
+[6.350s] -- Installing: /home/devam/bumperbot_ws/install/bumperbot_localization/share/bumperbot_localization/local_setup.bash
+[6.350s] -- Installing: /home/devam/bumperbot_ws/install/bumperbot_localization/share/bumperbot_localization/local_setup.sh
+[6.350s] -- Installing: /home/devam/bumperbot_ws/install/bumperbot_localization/share/bumperbot_localization/local_setup.zsh
+[6.350s] -- Installing: /home/devam/bumperbot_ws/install/bumperbot_localization/share/bumperbot_localization/local_setup.dsv
+[6.350s] -- Installing: /home/devam/bumperbot_ws/install/bumperbot_localization/share/bumperbot_localization/package.dsv
+[6.350s] -- Installing: /home/devam/bumperbot_ws/install/bumperbot_localization/share/ament_index/resource_index/packages/bumperbot_localization
+[6.350s] -- Installing: /home/devam/bumperbot_ws/install/bumperbot_localization/share/bumperbot_localization/cmake/bumperbot_localizationConfig.cmake
+[6.350s] -- Installing: /home/devam/bumperbot_ws/install/bumperbot_localization/share/bumperbot_localization/cmake/bumperbot_localizationConfig-version.cmake
+[6.350s] -- Installing: /home/devam/bumperbot_ws/install/bumperbot_localization/share/bumperbot_localization/package.xml
+[6.351s] Invoked command in '/home/devam/bumperbot_ws/build/bumperbot_localization' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devam/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --install /home/devam/bumperbot_ws/build/bumperbot_localization

@@ -35,7 +35,7 @@ class NoisyController(Node):
         self.theta = 0.0
 
         self.joint_state_sub = self.create_subscription(JointState,"joint_states",self.jointCB,10)
-        self.odom_pub = self.create_publisher(Odometry,"bumperbot_odom_noisy",10)
+        self.odom_pub = self.create_publisher(Odometry,"bumperbot_controller/odom_noisy",10)
 
         self.odom_msg = Odometry()
         self.odom_msg.header.frame_id = "odom"

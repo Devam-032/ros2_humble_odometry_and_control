@@ -28,7 +28,7 @@ Node(name),left_prev_pose(0.0),right_prev_pose(0.0),x(0.0),y(0.0),odom_br(this)
 
     prev_time = get_clock()->now();
 
-    odom_pub = create_publisher<nav_msgs::msg::Odometry>("/bumperbot_odom",10);
+    odom_pub = create_publisher<nav_msgs::msg::Odometry>("/bumperbot_controller/odom",10);
 
     odom.header.frame_id = "odom";
     odom.child_frame_id = "base_footprint";
