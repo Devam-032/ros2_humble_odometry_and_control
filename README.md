@@ -1,4 +1,4 @@
-# Advanced Kinematics and Odometry Practice 🚀
+# Advanced Kinematics and EKF Localization Using IMU 🚀
 
 ## Overview
 Explore a hands-on repository focused on practical scripts and concepts in mobile robotics and ROS 2. This collection emphasizes real-world applications and strengthens core skills in robotics. The content is enhanced with additional scripts to deepen understanding and practical skills in ROS 2.
@@ -18,7 +18,7 @@ Explore a hands-on repository focused on practical scripts and concepts in mobil
 ### Publishers and Subscribers 📡
 - Gained an in-depth understanding of how ROS 2 publishers and subscribers facilitate communication between nodes.
 - Developed scripts to experiment with message flow, including publishing velocity commands and subscribing to feedback data.
-- Practiced combining multiple subscribers and publishers for streamlined and modular robot control.
+- Combined multiple subscribers and publishers for streamlined and modular robot control.
 
 ### URDF and Bot Design 🤖
 - Designed a robot model using URDF (Unified Robot Description Format).
@@ -51,8 +51,8 @@ Explore a hands-on repository focused on practical scripts and concepts in mobil
 - Enhanced compatibility and support for various ROS 2 versions through dynamic version checking in the launch files.
 - Modified the launch file to integrate the noisy controller and additional features seamlessly.
 
-## Practice Enhancements 💡
-To further explore and solidify the concepts, additional practice scripts were developed:
+## Enhancements 💡
+To further explore and solidify the concepts, additional scripts were developed:
 
 ### C++ Scripts
 1. **Twist Message Publisher**
@@ -95,6 +95,11 @@ To further explore and solidify the concepts, additional practice scripts were d
    - Python implementation of a custom controller for managing robot movement and velocity commands.
    - Extracts velocity information using `joint_states` for feedback and control.
 
+### EKF Localization Using IMU
+- Developed an Extended Kalman Filter (EKF) for localization.
+- Used wheel encoder data for prediction and IMU data for correction or measurement.
+- Created a new package named `bumperbot_localization` to implement EKF-based localization.
+
 ## Prerequisites 🛠️
 - ROS 2 installed on your system.
 - Basic understanding of ROS 2 concepts, including nodes, publishers, and subscribers.
@@ -134,10 +139,14 @@ To get started with this project and explore its features, follow these steps:
      ```bash
      ros2 launch bumperbot_description gazebo.launch.py
      ```
+   - Launch the EKF localization:
+     ```bash
+     ros2 launch bumperbot_localization ekf_localization.launch.py
+     ```
 
 ## Future Plans 🌟
-- Implementing advanced odometry and control topics.
-- Adding simulation environments for testing and visualization.
+- Expanding advanced odometry and control topics.
+- Adding more simulation environments for testing and visualization.
 
 ## Acknowledgments 🙌
 - Contributions from various open-source robotics resources and communities.
