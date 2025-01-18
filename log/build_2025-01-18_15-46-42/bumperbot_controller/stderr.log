@@ -1,0 +1,14 @@
+In file included from [01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/src/noisy_controller.cpp:1[m[K:
+[01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/include/bumperbot_controller/noisy_controller.hpp:19:46:[m[K [01;31m[Kerror: [m[K‘[01m[KTwistStamped[m[K’ in namespace ‘[01m[Kgeometry_msgs::msg[m[K’ does not name a type
+   19 |         void velCb(const geometry_msgs::msg::[01;31m[KTwistStamped[m[K &msg);
+      |                                              [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/src/noisy_controller.cpp:[m[K In member function ‘[01m[Kvoid NoisyController::jointCb(const JointState&)[m[K’:
+[01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/src/noisy_controller.cpp:49:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kwheel_radius[m[K’ was not declared in this scope
+   49 |     double linear = [01;31m[Kwheel_radius[m[K*(fl+fr)/2;
+      |                     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/src/noisy_controller.cpp:50:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kwheel_separation[m[K’ was not declared in this scope
+   50 |     double angular = wheel_radius*(fr-fl)/[01;31m[Kwheel_separation[m[K;
+      |                                           [01;31m[K^~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/noisy_controller.dir/build.make:76: CMakeFiles/noisy_controller.dir/src/noisy_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:220: CMakeFiles/noisy_controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

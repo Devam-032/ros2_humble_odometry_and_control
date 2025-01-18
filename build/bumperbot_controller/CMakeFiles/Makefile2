@@ -65,6 +65,7 @@ CMAKE_BINARY_DIR = /home/devam/bumperbot_ws/build/bumperbot_controller
 # The main recursive "all" target.
 all: CMakeFiles/ament_cmake_python_build_bumperbot_controller_egg.dir/all
 all: CMakeFiles/simple_controller.dir/all
+all: CMakeFiles/noisy_controller.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -77,6 +78,7 @@ clean: CMakeFiles/bumperbot_controller_uninstall.dir/clean
 clean: CMakeFiles/ament_cmake_python_copy_bumperbot_controller.dir/clean
 clean: CMakeFiles/ament_cmake_python_build_bumperbot_controller_egg.dir/clean
 clean: CMakeFiles/simple_controller.dir/clean
+clean: CMakeFiles/noisy_controller.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -190,7 +192,7 @@ CMakeFiles/ament_cmake_python_build_bumperbot_controller_egg.dir/clean:
 CMakeFiles/simple_controller.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_controller.dir/build.make CMakeFiles/simple_controller.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_controller.dir/build.make CMakeFiles/simple_controller.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/devam/bumperbot_ws/build/bumperbot_controller/CMakeFiles --progress-num=1,2 "Built target simple_controller"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/devam/bumperbot_ws/build/bumperbot_controller/CMakeFiles --progress-num=3,4 "Built target simple_controller"
 .PHONY : CMakeFiles/simple_controller.dir/all
 
 # Build rule for subdir invocation for target.
@@ -208,6 +210,32 @@ simple_controller: CMakeFiles/simple_controller.dir/rule
 CMakeFiles/simple_controller.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_controller.dir/build.make CMakeFiles/simple_controller.dir/clean
 .PHONY : CMakeFiles/simple_controller.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/noisy_controller.dir
+
+# All Build rule for target.
+CMakeFiles/noisy_controller.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/noisy_controller.dir/build.make CMakeFiles/noisy_controller.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/noisy_controller.dir/build.make CMakeFiles/noisy_controller.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/devam/bumperbot_ws/build/bumperbot_controller/CMakeFiles --progress-num=1,2 "Built target noisy_controller"
+.PHONY : CMakeFiles/noisy_controller.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/noisy_controller.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/devam/bumperbot_ws/build/bumperbot_controller/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/noisy_controller.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/devam/bumperbot_ws/build/bumperbot_controller/CMakeFiles 0
+.PHONY : CMakeFiles/noisy_controller.dir/rule
+
+# Convenience name for target.
+noisy_controller: CMakeFiles/noisy_controller.dir/rule
+.PHONY : noisy_controller
+
+# clean rule for target.
+CMakeFiles/noisy_controller.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/noisy_controller.dir/build.make CMakeFiles/noisy_controller.dir/clean
+.PHONY : CMakeFiles/noisy_controller.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

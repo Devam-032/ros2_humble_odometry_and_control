@@ -1,0 +1,6 @@
+[31mCMake Error at cmake_install.cmake:101 (file):
+  file INSTALL cannot find
+  "/home/devam/bumperbot_ws/src/bumperbot_controller/bumperbot_controller/noisy_controller.py":
+  No such file or directory.
+
+[0m

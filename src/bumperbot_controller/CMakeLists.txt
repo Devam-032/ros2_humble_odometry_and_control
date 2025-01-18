@@ -35,6 +35,19 @@ ament_target_dependencies(simple_controller
   tf2
 )
 
+add_executable(noisy_controller src/noisy_controller.cpp)
+ament_target_dependencies(noisy_controller
+  rclcpp
+  geometry_msgs
+  std_msgs
+  ${Eigen_LIBRARIES}
+  sensor_msgs
+  nav_msgs
+  tf2_ros
+  tf2
+)
+
+
 install(
   DIRECTORY include
   DESTINATION include
@@ -42,6 +55,7 @@ install(
 
 install(TARGETS
   simple_controller
+  noisy_controller
   DESTINATION lib/${PROJECT_NAME}
 )
 
@@ -52,6 +66,7 @@ install(
 
 install(PROGRAMS
   ${PROJECT_NAME}/simple_controller.py
+  ${PROJECT_NAME}/noise_controller.py
   ${PROJECT_NAME}/simple_path.py
   DESTINATION lib/${PROJECT_NAME}
 )

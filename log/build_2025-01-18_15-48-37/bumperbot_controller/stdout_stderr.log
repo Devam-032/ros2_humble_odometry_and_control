@@ -1,0 +1,21 @@
+[35m[1mConsolidate compiler generated dependencies of target noisy_controller[0m
+[ 50%] Built target simple_controller
+[ 75%] [32mBuilding CXX object CMakeFiles/noisy_controller.dir/src/noisy_controller.cpp.o[0m
+[ 75%] Built target ament_cmake_python_copy_bumperbot_controller
+running egg_info
+writing bumperbot_controller.egg-info/PKG-INFO
+writing dependency_links to bumperbot_controller.egg-info/dependency_links.txt
+writing top-level names to bumperbot_controller.egg-info/top_level.txt
+reading manifest file 'bumperbot_controller.egg-info/SOURCES.txt'
+writing manifest file 'bumperbot_controller.egg-info/SOURCES.txt'
+[ 75%] Built target ament_cmake_python_build_bumperbot_controller_egg
+In file included from [01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/src/noisy_controller.cpp:1[m[K:
+[01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/include/bumperbot_controller/noisy_controller.hpp:19:46:[m[K [01;31m[Kerror: [m[K‘[01m[KTwistStamped[m[K’ in namespace ‘[01m[Kgeometry_msgs::msg[m[K’ does not name a type
+   19 |         void velCb(const geometry_msgs::msg::[01;31m[KTwistStamped[m[K &msg);
+      |                                              [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/devam/bumperbot_ws/src/bumperbot_controller/include/bumperbot_controller/noisy_controller.hpp:28:9:[m[K [01;31m[Kerror: [m[K‘[01m[KEigen[m[K’ does not name a type
+   28 |         [01;31m[KEigen[m[K::Matrix2d speed_conversion;
+      |         [01;31m[K^~~~~[m[K
+gmake[2]: *** [CMakeFiles/noisy_controller.dir/build.make:76: CMakeFiles/noisy_controller.dir/src/noisy_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:220: CMakeFiles/noisy_controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
