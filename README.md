@@ -1,7 +1,7 @@
-# Kinematics and Twist Message Practice 🚀
+# Advanced Kinematics and Odometry Practice 🚀
 
 ## Overview
-This repository contains implementations and practice scripts based on key learnings in mobile robotics and ROS 2. The content is enhanced with additional scripts to deepen understanding and practical skills in ROS 2.
+Explore a hands-on repository focused on practical scripts and concepts in mobile robotics and ROS 2. This collection emphasizes real-world applications and strengthens core skills in robotics. The content is enhanced with additional scripts to deepen understanding and practical skills in ROS 2.
 
 ## Key Learnings
 ### Kinematics 🧮
@@ -27,23 +27,29 @@ This repository contains implementations and practice scripts based on key learn
 - Verified the URDF design in simulation environments for functional testing.
 
 ### Differential Drive Controller 🛞
-- Used the `diff_drive_controller` to enable precise control of the differential drive robot without modifications.
+- The `diff_drive_controller` was used to smoothly translate velocity commands into wheel-specific actions, enabling reliable and precise robot movement.
 - Configured the controller to interface seamlessly with the robot's hardware and ROS 2 topics.
 - Utilized the controller to translate velocity commands into wheel-specific control inputs.
 
 ### Custom Simple Controller 🛠️
-- Implemented a custom `simple_controller` in both Python and C++.
-- Designed to offer direct control over the robot's movement and velocity based on specific requirements.
-- Added functionality to extract velocity information using `joint_states` for enhanced feedback and control.
+- Built a custom `simple_controller` in both Python and C++ to manage robot movement.
+- Designed for direct and adaptable control over the robot's velocity.
+- Added features to track velocity through `joint_states` for better feedback.
+- Simulated real-world conditions with a noisy controller.
+- Enabled pose estimation using wheel odometry and added an `odom` publisher for localization.
 
 ### Transform Publisher and Subscriber 🔀
 - Added a transform publisher and subscriber in both Python and C++.
 - Created a Python service to retrieve transform data, enabling efficient data handling and processing.
 
 ### Launch Files 🚀
-- Developed launch files to streamline the process of launching the differential drive controller for the designed robot.
+- Launch files in ROS 2 are configuration scripts that simplify starting multiple nodes or processes together.
+- Created files to make it easier to start the differential drive controller for the robot.
+- These launch files also initialize the robot in Gazebo Ignition, with added features to automatically adjust for the detected ROS 2 and Gazebo versions.
+- Integrated the noisy controller and pose estimation functionalities seamlessly into the launch sequence.
 - Created a launch file to initialize the robot in Gazebo Ignition, with added functionality to automatically detect the Gazebo version based on the ROS 2 version.
 - Enhanced compatibility and support for various ROS 2 versions through dynamic version checking in the launch files.
+- Modified the launch file to integrate the noisy controller and additional features seamlessly.
 
 ## Practice Enhancements 💡
 To further explore and solidify the concepts, additional practice scripts were developed:
@@ -65,6 +71,8 @@ To further explore and solidify the concepts, additional practice scripts were d
 5. **Simple Controller**
    - Implements a basic controller for managing robot movement and velocity commands in C++.
    - Extracts velocity information using `joint_states` for feedback and control.
+   - Publishes `odom` messages for enhanced localization.
+   - Includes pose estimation using wheel odometry.
 
 ### Python Scripts
 1. **Twist Message Publisher**
@@ -93,6 +101,8 @@ To further explore and solidify the concepts, additional practice scripts were d
 - Familiarity with C++ and Python programming.
 
 ## How to Run ▶️
+To get started with this project and explore its features, follow these steps:
+
 1. Clone this repository:
    ```bash
    git clone https://github.com/Devam-032/ros2_humble_odometry_and_control/tree/main
