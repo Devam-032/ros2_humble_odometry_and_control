@@ -1,0 +1,38 @@
+[0.023s] Invoking command in '/home/devam/bumperbot_ws/build/bumperbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devam/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/devam/bumperbot_ws/build/bumperbot_description -- -j24 -l24
+[0.326s] Invoked command in '/home/devam/bumperbot_ws/build/bumperbot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devam/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/devam/bumperbot_ws/build/bumperbot_description -- -j24 -l24
+[0.337s] Invoking command in '/home/devam/bumperbot_ws/build/bumperbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devam/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --install /home/devam/bumperbot_ws/build/bumperbot_description
+[0.343s] -- Install configuration: ""
+[0.343s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_description/share/bumperbot_description/meshes
+[0.343s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_description/share/bumperbot_description/meshes/can.STL
+[0.343s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_description/share/bumperbot_description/meshes/wheel_left_link.STL
+[0.343s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_description/share/bumperbot_description/meshes/caster_front_link.STL
+[0.344s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_description/share/bumperbot_description/meshes/imu_link.STL
+[0.344s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_description/share/bumperbot_description/meshes/base_link.STL
+[0.344s] -- Installing: /home/devam/bumperbot_ws/install/bumperbot_description/share/bumperbot_description/meshes/laser_link.STL
+[0.347s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_description/share/bumperbot_description/meshes/caster_rear_link.STL
+[0.347s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_description/share/bumperbot_description/meshes/wheel_right_link.STL
+[0.347s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_description/share/bumperbot_description/urdf
+[0.347s] -- Installing: /home/devam/bumperbot_ws/install/bumperbot_description/share/bumperbot_description/urdf/bumperbot.urdf.xacro
+[0.348s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_description/share/bumperbot_description/urdf/bumperbot_ros2_control.xacro
+[0.348s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_description/share/bumperbot_description/urdf/bumperbot_gazebo.xacro
+[0.348s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_description/share/bumperbot_description/launch
+[0.348s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_description/share/bumperbot_description/launch/display.launch.py
+[0.348s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_description/share/bumperbot_description/launch/gazebo.launch.py
+[0.348s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_description/share/bumperbot_description/rviz
+[0.348s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_description/share/bumperbot_description/rviz/display.rviz
+[0.349s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_description/share/ament_index/resource_index/package_run_dependencies/bumperbot_description
+[0.350s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_description/share/ament_index/resource_index/parent_prefix_path/bumperbot_description
+[0.350s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_description/share/bumperbot_description/environment/ament_prefix_path.sh
+[0.350s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_description/share/bumperbot_description/environment/ament_prefix_path.dsv
+[0.351s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_description/share/bumperbot_description/environment/path.sh
+[0.351s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_description/share/bumperbot_description/environment/path.dsv
+[0.351s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_description/share/bumperbot_description/local_setup.bash
+[0.351s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_description/share/bumperbot_description/local_setup.sh
+[0.351s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_description/share/bumperbot_description/local_setup.zsh
+[0.352s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_description/share/bumperbot_description/local_setup.dsv
+[0.352s] -- Installing: /home/devam/bumperbot_ws/install/bumperbot_description/share/bumperbot_description/package.dsv
+[0.352s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_description/share/ament_index/resource_index/packages/bumperbot_description
+[0.352s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_description/share/bumperbot_description/cmake/bumperbot_descriptionConfig.cmake
+[0.353s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_description/share/bumperbot_description/cmake/bumperbot_descriptionConfig-version.cmake
+[0.353s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_description/share/bumperbot_description/package.xml
+[0.355s] Invoked command in '/home/devam/bumperbot_ws/build/bumperbot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devam/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --install /home/devam/bumperbot_ws/build/bumperbot_description

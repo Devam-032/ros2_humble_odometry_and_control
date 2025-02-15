@@ -1,0 +1,61 @@
+[0.017s] Invoking command in '/home/devam/bumperbot_ws/build/bumperbot_localization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devam/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/devam/bumperbot_ws/build/bumperbot_localization -- -j24 -l24
+[0.051s] [35m[1mConsolidate compiler generated dependencies of target kalman_filter[0m
+[0.052s] [35m[1mConsolidate compiler generated dependencies of target imu_republisher[0m
+[0.061s] [ 25%] [32mBuilding CXX object CMakeFiles/kalman_filter.dir/src/kalman_filter.cpp.o[0m
+[0.065s] [ 25%] Built target ament_cmake_python_copy_bumperbot_localization
+[0.065s] [ 50%] [32mBuilding CXX object CMakeFiles/imu_republisher.dir/src/imu_republisher.cpp.o[0m
+[0.339s] running egg_info
+[0.351s] writing bumperbot_localization.egg-info/PKG-INFO
+[0.351s] writing dependency_links to bumperbot_localization.egg-info/dependency_links.txt
+[0.351s] writing top-level names to bumperbot_localization.egg-info/top_level.txt
+[0.393s] reading manifest file 'bumperbot_localization.egg-info/SOURCES.txt'
+[0.393s] writing manifest file 'bumperbot_localization.egg-info/SOURCES.txt'
+[0.430s] [ 50%] Built target ament_cmake_python_build_bumperbot_localization_egg
+[5.144s] [ 75%] [32m[1mLinking CXX executable imu_republisher[0m
+[5.373s] [ 75%] Built target imu_republisher
+[7.342s] [100%] [32m[1mLinking CXX executable kalman_filter[0m
+[7.616s] [100%] Built target kalman_filter
+[7.623s] Invoked command in '/home/devam/bumperbot_ws/build/bumperbot_localization' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devam/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/devam/bumperbot_ws/build/bumperbot_localization -- -j24 -l24
+[7.625s] Invoking command in '/home/devam/bumperbot_ws/build/bumperbot_localization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devam/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --install /home/devam/bumperbot_ws/build/bumperbot_localization
+[7.631s] -- Install configuration: ""
+[7.631s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_localization/share/bumperbot_localization/environment/pythonpath.sh
+[7.631s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_localization/share/bumperbot_localization/environment/pythonpath.dsv
+[7.631s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_localization/local/lib/python3.10/dist-packages/bumperbot_localization-0.0.0-py3.10.egg-info
+[7.631s] -- Installing: /home/devam/bumperbot_ws/install/bumperbot_localization/local/lib/python3.10/dist-packages/bumperbot_localization-0.0.0-py3.10.egg-info/top_level.txt
+[7.631s] -- Installing: /home/devam/bumperbot_ws/install/bumperbot_localization/local/lib/python3.10/dist-packages/bumperbot_localization-0.0.0-py3.10.egg-info/PKG-INFO
+[7.631s] -- Installing: /home/devam/bumperbot_ws/install/bumperbot_localization/local/lib/python3.10/dist-packages/bumperbot_localization-0.0.0-py3.10.egg-info/SOURCES.txt
+[7.631s] -- Installing: /home/devam/bumperbot_ws/install/bumperbot_localization/local/lib/python3.10/dist-packages/bumperbot_localization-0.0.0-py3.10.egg-info/dependency_links.txt
+[7.631s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_localization/local/lib/python3.10/dist-packages/bumperbot_localization
+[7.631s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_localization/local/lib/python3.10/dist-packages/bumperbot_localization/kalman_filter.py
+[7.631s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_localization/local/lib/python3.10/dist-packages/bumperbot_localization/imu_republisher.py
+[7.632s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_localization/local/lib/python3.10/dist-packages/bumperbot_localization/__init__.py
+[7.650s] Listing '/home/devam/bumperbot_ws/install/bumperbot_localization/local/lib/python3.10/dist-packages/bumperbot_localization'...
+[7.653s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_localization/include/include
+[7.653s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_localization/include/include/bumperbot_localization
+[7.653s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_localization/include/include/bumperbot_localization/kalman_filter.hpp
+[7.654s] -- Installing: /home/devam/bumperbot_ws/install/bumperbot_localization/lib/bumperbot_localization/kalman_filter
+[7.656s] -- Set runtime path of "/home/devam/bumperbot_ws/install/bumperbot_localization/lib/bumperbot_localization/kalman_filter" to ""
+[7.657s] -- Installing: /home/devam/bumperbot_ws/install/bumperbot_localization/lib/bumperbot_localization/imu_republisher
+[7.659s] -- Set runtime path of "/home/devam/bumperbot_ws/install/bumperbot_localization/lib/bumperbot_localization/imu_republisher" to ""
+[7.659s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_localization/share/bumperbot_localization/launch
+[7.659s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_localization/share/bumperbot_localization/launch/local_localization.launch.py
+[7.659s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_localization/share/bumperbot_localization/config
+[7.659s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_localization/share/bumperbot_localization/config/ekf.yaml
+[7.659s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_localization/lib/bumperbot_localization/kalman_filter.py
+[7.659s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_localization/lib/bumperbot_localization/imu_republisher.py
+[7.659s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_localization/share/ament_index/resource_index/package_run_dependencies/bumperbot_localization
+[7.659s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_localization/share/ament_index/resource_index/parent_prefix_path/bumperbot_localization
+[7.659s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_localization/share/bumperbot_localization/environment/ament_prefix_path.sh
+[7.659s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_localization/share/bumperbot_localization/environment/ament_prefix_path.dsv
+[7.659s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_localization/share/bumperbot_localization/environment/path.sh
+[7.659s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_localization/share/bumperbot_localization/environment/path.dsv
+[7.659s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_localization/share/bumperbot_localization/local_setup.bash
+[7.659s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_localization/share/bumperbot_localization/local_setup.sh
+[7.659s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_localization/share/bumperbot_localization/local_setup.zsh
+[7.659s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_localization/share/bumperbot_localization/local_setup.dsv
+[7.659s] -- Installing: /home/devam/bumperbot_ws/install/bumperbot_localization/share/bumperbot_localization/package.dsv
+[7.659s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_localization/share/ament_index/resource_index/packages/bumperbot_localization
+[7.659s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_localization/share/bumperbot_localization/cmake/bumperbot_localizationConfig.cmake
+[7.659s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_localization/share/bumperbot_localization/cmake/bumperbot_localizationConfig-version.cmake
+[7.659s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_localization/share/bumperbot_localization/package.xml
+[7.661s] Invoked command in '/home/devam/bumperbot_ws/build/bumperbot_localization' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devam/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --install /home/devam/bumperbot_ws/build/bumperbot_localization

@@ -1,44 +1,44 @@
 <?xml version="1.0"?>
-<robot name="bumperbot" xmlns:xacro = "http://www.ros.org/wiki/xacro" >
-    <gazebo reference="wheel_right_link">
-        <mu1>100000000000000.0</mu1>
-        <mu2>100000000000000.0</mu2>
-        <kp>10000000000.0</kp>
-        <kd>10.0</kd>
-        <minDepth>.001</minDepth>
-        <maxVel>.1</maxVel>
-        <fdir1>1 0 0</fdir1>
-    </gazebo>
-    
-    <gazebo reference="wheel_left_link">
-        <mu1>100000000000000.0</mu1>
-        <mu2>100000000000000.0</mu2>
-        <kp>10000000000.0</kp>
-        <kd>10.0</kd>
-        <minDepth>.001</minDepth>
-        <maxVel>.1</maxVel>
-        <fdir1>1 0 0</fdir1><!-- for setting the direction of rotation-->
-    </gazebo>
+<robot name="bumperbot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <gazebo reference="wheel_right_link">
+    <mu1>100000000000000.0</mu1>
+    <mu2>100000000000000.0</mu2>
+    <kp>10000000000.0</kp>
+    <kd>10.0</kd>
+    <minDepth>.001</minDepth>
+    <maxVel>.1</maxVel>
+    <fdir1>1 0 0</fdir1>
+  </gazebo>
+  
+  <gazebo reference="wheel_left_link">
+    <mu1>100000000000000.0</mu1>
+    <mu2>100000000000000.0</mu2>
+    <kp>10000000000.0</kp>
+    <kd>10.0</kd>
+    <minDepth>.001</minDepth>
+    <maxVel>.1</maxVel>
+    <fdir1>1 0 0</fdir1><!-- for setting the direction of rotation-->
+  </gazebo>
 
-    <gazebo reference="castor_front_link">
-        <mu1>0.1</mu1>
-        <mu2>0.1</mu2>
-        <kp>1000000.0</kp>
-        <kd>100.0</kd>
-        <minDepth>.001</minDepth>
-        <maxVel>.1</maxVel>
-    </gazebo>
+  <gazebo reference="castor_front_link">
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>1000000.0</kp>
+    <kd>100.0</kd>
+    <minDepth>.001</minDepth>
+    <maxVel>.1</maxVel>
+  </gazebo>
 
-    <gazebo reference="castor_rear_link">
-        <mu1>0.1</mu1>
-        <mu2>0.1</mu2>
-        <kp>1000000.0</kp>
-        <kd>100.0</kd>
-        <minDepth>.001</minDepth>
-        <maxVel>.1</maxVel>
-    </gazebo>
+  <gazebo reference="castor_rear_link">
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>1000000.0</kp>
+    <kd>100.0</kd>
+    <minDepth>.001</minDepth>
+    <maxVel>.1</maxVel>
+  </gazebo>
 
-    <!-- ROS 2 Control -->
+  <!-- ROS 2 Control -->
   <gazebo>
     <!-- ROS 2 Humble -->
     <xacro:if value="$(arg is_ignition)">
@@ -46,6 +46,9 @@
         <parameters>$(find bumperbot_controller)/config/bumperbot_controllers.yaml</parameters>
       </plugin>
       <plugin filename="ignition-gazebo-imu-system" name="ignition::gazebo::systems::Imu"/>
+      <plugin filename="ignition-gazebo-sensors-system" name="ignition::gazebo::systems::Sensors">
+        <render_engine>ogre2</render_engine>
+      </plugin>
     </xacro:if>
 
     <!-- ROS 2 Iron or above -->
@@ -65,19 +68,19 @@
       <imu>
         <angular_velocity>
           <x>
-            <noise type= "gaussian">
+            <noise type="gaussian">
               <mean>0.0</mean>
               <stddev>2e-4</stddev>
             </noise>
           </x>
           <y>
-            <noise type= "gaussian">
+            <noise type="gaussian">
               <mean>0.0</mean>
               <stddev>2e-4</stddev>
             </noise>
           </y>
           <z>
-            <noise type= "gaussian">
+            <noise type="gaussian">
               <mean>0.0</mean>
               <stddev>2e-4</stddev>
             </noise>
@@ -85,28 +88,61 @@
         </angular_velocity>
         <linear_acceleration>
           <x>
-            <noise type= "gaussian">
+            <noise type="gaussian">
               <mean>0.0</mean>
               <stddev>1.7e-2</stddev>
             </noise>
           </x>
           <y>
-            <noise type= "gaussian">
+            <noise type="gaussian">
               <mean>0.0</mean>
               <stddev>1.7e-2</stddev>
             </noise>
           </y>
           <z>
-            <noise type= "gaussian">
+            <noise type="gaussian">
               <mean>0.0</mean>
               <stddev>1.7e-2</stddev>
             </noise>
           </z>
         </linear_acceleration>
       </imu>
-    <!-- Sensor imu -->
+      <!-- Sensor imu -->
     </sensor>
-    
   </gazebo>
+
+  <gazebo reference = "laser_link">
+    <sensor name="lidar" type="gpu_ray" >
+      <parent link="base_link"/>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <always_on>true</always_on>
+      <visualize>true</visualize>
+      <topic>scan</topic>
+      <update_rate>10</update_rate>
+      <gz_frame_id>laser_link</gz_frame_id>
+      <!-- Sensor gpu_ray -->
+      <ray>
+        <scan>
+          <horizontal>
+            <samples>500</samples>
+            <resolution>.72</resolution>
+            <min_angle>0</min_angle>
+            <max_angle>6.28</max_angle>
+          </horizontal>
+        </scan>
+        <range>
+          <min>0.03</min>
+          <max>10</max>
+          <resolution>.02</resolution>
+        </range>
+        <noise>
+          <type>gaussian</type>
+          <mean>0.0</mean>
+          <stddev>0.01</stddev>
+        </noise>
+      </ray>
+    </sensor>
+  </gazebo>
+
 
 </robot>

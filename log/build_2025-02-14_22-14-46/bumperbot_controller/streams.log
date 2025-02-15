@@ -1,0 +1,62 @@
+[0.017s] Invoking command in '/home/devam/bumperbot_ws/build/bumperbot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devam/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/devam/bumperbot_ws/build/bumperbot_controller -- -j24 -l24
+[0.067s] [ 25%] [32mBuilding CXX object CMakeFiles/noisy_controller.dir/src/noisy_controller.cpp.o[0m
+[0.068s] [ 25%] Built target ament_cmake_python_copy_bumperbot_controller
+[0.070s] [ 50%] [32mBuilding CXX object CMakeFiles/simple_controller.dir/src/simple_controller.cpp.o[0m
+[0.321s] running egg_info
+[0.330s] writing bumperbot_controller.egg-info/PKG-INFO
+[0.330s] writing dependency_links to bumperbot_controller.egg-info/dependency_links.txt
+[0.330s] writing top-level names to bumperbot_controller.egg-info/top_level.txt
+[0.365s] reading manifest file 'bumperbot_controller.egg-info/SOURCES.txt'
+[0.365s] writing manifest file 'bumperbot_controller.egg-info/SOURCES.txt'
+[0.393s] [ 50%] Built target ament_cmake_python_build_bumperbot_controller_egg
+[5.802s] [ 75%] [32m[1mLinking CXX executable noisy_controller[0m
+[6.053s] [ 75%] Built target noisy_controller
+[7.422s] [100%] [32m[1mLinking CXX executable simple_controller[0m
+[7.737s] [100%] Built target simple_controller
+[7.745s] Invoked command in '/home/devam/bumperbot_ws/build/bumperbot_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devam/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/devam/bumperbot_ws/build/bumperbot_controller -- -j24 -l24
+[7.746s] Invoking command in '/home/devam/bumperbot_ws/build/bumperbot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devam/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --install /home/devam/bumperbot_ws/build/bumperbot_controller
+[7.751s] -- Install configuration: ""
+[7.751s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/environment/pythonpath.sh
+[7.751s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/environment/pythonpath.dsv
+[7.751s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_controller/local/lib/python3.10/dist-packages/bumperbot_controller-0.0.0-py3.10.egg-info
+[7.751s] -- Installing: /home/devam/bumperbot_ws/install/bumperbot_controller/local/lib/python3.10/dist-packages/bumperbot_controller-0.0.0-py3.10.egg-info/top_level.txt
+[7.751s] -- Installing: /home/devam/bumperbot_ws/install/bumperbot_controller/local/lib/python3.10/dist-packages/bumperbot_controller-0.0.0-py3.10.egg-info/PKG-INFO
+[7.751s] -- Installing: /home/devam/bumperbot_ws/install/bumperbot_controller/local/lib/python3.10/dist-packages/bumperbot_controller-0.0.0-py3.10.egg-info/SOURCES.txt
+[7.751s] -- Installing: /home/devam/bumperbot_ws/install/bumperbot_controller/local/lib/python3.10/dist-packages/bumperbot_controller-0.0.0-py3.10.egg-info/dependency_links.txt
+[7.751s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_controller/local/lib/python3.10/dist-packages/bumperbot_controller
+[7.751s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_controller/local/lib/python3.10/dist-packages/bumperbot_controller/simple_path.py
+[7.752s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_controller/local/lib/python3.10/dist-packages/bumperbot_controller/noise_controller.py
+[7.752s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_controller/local/lib/python3.10/dist-packages/bumperbot_controller/__init__.py
+[7.752s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_controller/local/lib/python3.10/dist-packages/bumperbot_controller/simple_controller.py
+[7.770s] Listing '/home/devam/bumperbot_ws/install/bumperbot_controller/local/lib/python3.10/dist-packages/bumperbot_controller'...
+[7.772s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_controller/include/include
+[7.772s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_controller/include/include/bumperbot_controller
+[7.772s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_controller/include/include/bumperbot_controller/simple_controller.hpp
+[7.772s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_controller/include/include/bumperbot_controller/noisy_controller.hpp
+[7.773s] -- Installing: /home/devam/bumperbot_ws/install/bumperbot_controller/lib/bumperbot_controller/simple_controller
+[7.776s] -- Set runtime path of "/home/devam/bumperbot_ws/install/bumperbot_controller/lib/bumperbot_controller/simple_controller" to ""
+[7.777s] -- Installing: /home/devam/bumperbot_ws/install/bumperbot_controller/lib/bumperbot_controller/noisy_controller
+[7.779s] -- Set runtime path of "/home/devam/bumperbot_ws/install/bumperbot_controller/lib/bumperbot_controller/noisy_controller" to ""
+[7.779s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/config
+[7.779s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/config/bumperbot_controllers.yaml
+[7.779s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/launch
+[7.779s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/launch/controller.launch.py
+[7.779s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_controller/lib/bumperbot_controller/simple_controller.py
+[7.779s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_controller/lib/bumperbot_controller/noise_controller.py
+[7.779s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_controller/lib/bumperbot_controller/simple_path.py
+[7.779s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_controller/share/ament_index/resource_index/package_run_dependencies/bumperbot_controller
+[7.779s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_controller/share/ament_index/resource_index/parent_prefix_path/bumperbot_controller
+[7.779s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/environment/ament_prefix_path.sh
+[7.779s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/environment/ament_prefix_path.dsv
+[7.779s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/environment/path.sh
+[7.779s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/environment/path.dsv
+[7.779s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/local_setup.bash
+[7.779s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/local_setup.sh
+[7.779s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/local_setup.zsh
+[7.779s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/local_setup.dsv
+[7.780s] -- Installing: /home/devam/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/package.dsv
+[7.780s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_controller/share/ament_index/resource_index/packages/bumperbot_controller
+[7.780s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/cmake/bumperbot_controllerConfig.cmake
+[7.780s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/cmake/bumperbot_controllerConfig-version.cmake
+[7.780s] -- Up-to-date: /home/devam/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/package.xml
+[7.781s] Invoked command in '/home/devam/bumperbot_ws/build/bumperbot_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devam/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --install /home/devam/bumperbot_ws/build/bumperbot_controller

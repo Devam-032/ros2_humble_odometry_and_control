@@ -1,0 +1,25 @@
+[0.543s] Invoking command in '/home/devam/bumperbot_ws/src/bumperbot_py_examples': PYTHONPATH=/home/devam/bumperbot_ws/build/bumperbot_py_examples/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/devam/bumperbot_ws/install/bumperbot_py_examples/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/bumperbot_py_examples build --build-base /home/devam/bumperbot_ws/build/bumperbot_py_examples/build install --record /home/devam/bumperbot_ws/build/bumperbot_py_examples/install.log --single-version-externally-managed install_data
+[0.743s] running egg_info
+[0.751s] writing ../../build/bumperbot_py_examples/bumperbot_py_examples.egg-info/PKG-INFO
+[0.751s] writing dependency_links to ../../build/bumperbot_py_examples/bumperbot_py_examples.egg-info/dependency_links.txt
+[0.751s] writing entry points to ../../build/bumperbot_py_examples/bumperbot_py_examples.egg-info/entry_points.txt
+[0.751s] writing requirements to ../../build/bumperbot_py_examples/bumperbot_py_examples.egg-info/requires.txt
+[0.751s] writing top-level names to ../../build/bumperbot_py_examples/bumperbot_py_examples.egg-info/top_level.txt
+[0.766s] reading manifest file '../../build/bumperbot_py_examples/bumperbot_py_examples.egg-info/SOURCES.txt'
+[0.767s] writing manifest file '../../build/bumperbot_py_examples/bumperbot_py_examples.egg-info/SOURCES.txt'
+[0.767s] running build
+[0.767s] running build_py
+[0.767s] running install
+[0.769s] running install_lib
+[0.777s] running install_data
+[0.777s] running install_egg_info
+[0.785s] removing '/home/devam/bumperbot_ws/install/bumperbot_py_examples/lib/python3.10/site-packages/bumperbot_py_examples-0.0.0-py3.10.egg-info' (and everything under it)
+[0.785s] Copying ../../build/bumperbot_py_examples/bumperbot_py_examples.egg-info to /home/devam/bumperbot_ws/install/bumperbot_py_examples/lib/python3.10/site-packages/bumperbot_py_examples-0.0.0-py3.10.egg-info
+[0.785s] running install_scripts
+[0.815s] Installing simple_publisher script to /home/devam/bumperbot_ws/install/bumperbot_py_examples/lib/bumperbot_py_examples
+[0.815s] Installing simple_subscriber script to /home/devam/bumperbot_ws/install/bumperbot_py_examples/lib/bumperbot_py_examples
+[0.815s] Installing simple_tf_kinematics script to /home/devam/bumperbot_ws/install/bumperbot_py_examples/lib/bumperbot_py_examples
+[0.815s] Installing turtlesim_reference_pose_measurement script to /home/devam/bumperbot_ws/install/bumperbot_py_examples/lib/bumperbot_py_examples
+[0.815s] Installing twist_subscriber script to /home/devam/bumperbot_ws/install/bumperbot_py_examples/lib/bumperbot_py_examples
+[0.815s] writing list of installed files to '/home/devam/bumperbot_ws/build/bumperbot_py_examples/install.log'
+[0.833s] Invoked command in '/home/devam/bumperbot_ws/src/bumperbot_py_examples' returned '0': PYTHONPATH=/home/devam/bumperbot_ws/build/bumperbot_py_examples/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/devam/bumperbot_ws/install/bumperbot_py_examples/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/bumperbot_py_examples build --build-base /home/devam/bumperbot_ws/build/bumperbot_py_examples/build install --record /home/devam/bumperbot_ws/build/bumperbot_py_examples/install.log --single-version-externally-managed install_data
