@@ -1,5 +1,5 @@
 # Advanced Kinematics and EKF Localization Using IMU 🚀
-![Alt text](https://github.com/Devam-032/ros2_humble_odometry_and_control/blob/main/Screenshot%20from%202025-01-18%2019-08-57.png)
+![Alt text](https://github.com/Devam-032/ros2_humble_odometry_and_control/blob/main/bumperbot.png)
 
 ## Overview
 Explore a hands-on repository focused on practical scripts and concepts in mobile robotics and ROS 2. This collection emphasizes real-world applications and strengthens core skills in robotics. The content is enhanced with additional scripts to deepen understanding and practical skills in ROS 2.
